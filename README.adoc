@@ -1,0 +1,80 @@
+= Mastermind: Análisis y Diseño Orientado a Objetos
+
+== Primera versión
+
+En esta primera versión, se ha cometido el error de comenzar la implementación sin llevar a cabo un diseño previo.
+
+[.text-center]
+[plantuml, diagram-class1, png]
+....
+title Mastermind v1.0 - Diagrama de Clases
+class Main {
+    +{static} read : Scanner
+    +{static} game : Mastermind
+    +{static} main(String[]) : void
+    +{static} printCombinations() : void
+}
+
+class Mastermind {
+    -key : String
+    -combs : ArrayList<Combination>
+    +Mastermind()
+    +getKey() : String
+    +setKey() : void
+    +getCombinations() : ArrayList<Combination>
+    +checkCombination(String) : boolean
+}
+
+class Combination {
+    -colors : String
+    -dead : int
+    -wounded : int
+    +Combination()
+    +toString() : String
+    +getColors() : String
+    +setColors(String) : void
+    +getDead() : int
+    +setDead(int) : void
+    +getWounded() : int
+    +setWounded() : void
+}
+
+Main --> "0..1" Mastermind
+Mastermind --> "0..*" Combination
+....
+
+== Segunda versión
+
+[.text-center]
+[plantuml, diagram-class2, png]
+....
+title Mastermind v2.0 - Diagrama de Clases
+class Main {
+    +{static} leer : Scanner
+    +{static} partida : Mastermind
+    +{static} main(String[]) : void
+    +{static} imprimirPropuestas() : void
+}
+
+class Mastermind {
+    -colores : String
+    -clave : Combinacion
+    -propuestas : ArrayList<Combinacion>
+    +Mastermind(String)
+    +generarClave() : void
+    +comprobarPropuesta(String) : boolean
+    +getPropuestas() : ArrayList<Combinacion>
+}
+
+class Combinacion {
+    -valor : String
+    -muertos : int
+    -heridos : int
+    +Combinacion()
+    +toString() : String
+    +getValor() : String
+}
+
+Main --> "0..1" Mastermind
+Mastermind --> "0..*" Combinacion
+....

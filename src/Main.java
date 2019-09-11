@@ -2,28 +2,41 @@ import java.util.Scanner;
 
 public class Main {
 
-	static Scanner read = new Scanner (System.in);
-	static Mastermind game = new Mastermind();
+	static Scanner leer = new Scanner (System.in);
+	static Mastermind partida = new Mastermind("rbygop");
 
 	public static void main(String[] args) {
-		String comb;
-		int attempt = 0;
-		System.out.println("Bienvenido, introduzca una combinación:");
+		String propuesta;
+		int intento = 1;
+		String salir = null;
+		
+		System.out.println("¿Juegas a Mastermind? \n" + 
+				"Propón una combinación de cuatro colores (r, b, y, g, o, p):");
 		do {
-			comb = read.nextLine();
-			if(game.checkCombination(comb)) {
-				System.out.println("¡Bien hecho, lo has logrado! :)");
+			propuesta = leer.nextLine();
+			if(partida.comprobarPropuesta(propuesta)) {
+				System.out.println("¡Enhorabuena, has adivinado la combinación secreta!");
 			} else {
-				printCombinations();
-				System.out.println("Inténtalo de nuevo. :(");
-				attempt++;
+				imprimirPropuestas();
+				System.out.println("Vuelve a intentarlo.");
+				intento++;
+				if(intento == 10)  {
+					System.out.println("¿Deseas echar otra partida? s/n");
+					salir = leer.nextLine();
+					if(salir == "s") {
+						intento = 0;
+					} else {
+						System.out.println("Hasta la próxima.");
+					}
+				}
 			}
-		} while(attempt <= 10);
+		} while(intento <= 10);
 	}
 
-	public static void printCombinations() {
-		for(Combination comb : game.getCombinations()) {
-			System.out.println(comb.toString());
+	public static void imprimirPropuestas() {
+		for(Combinacion propuesta : partida.getPropuestas()) {
+			System.out.println(propuesta.toString());
 		}
 	}
+
 }

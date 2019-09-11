@@ -1,60 +1,57 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Random;
 
 public class Mastermind {
 
-	private String key;
-	private ArrayList<Combination> combs;
+	private String colores;
+	private Combinacion clave;
+	private ArrayList<Combinacion> propuestas;
 
-	public Mastermind() {
-		super();
-		this.setKey();
-		this.combs = new ArrayList<Combination>();
+	public Mastermind(String colores) {
+		this.colores = colores;
+		this.generarClave();
+		this.propuestas = new ArrayList<Combinacion>();
 	}
 
-	public String getKey() {
-		return key;
-	}
-
-	public void setKey() {
+	public void generarClave() {
 		Random r = new Random();
-		String colors = "rbygop";
+		String clave = "";
 
-		this.key = "";
 		for (int i = 0; i < 4; i++) {
-			StringBuilder sb = new StringBuilder(colors);
-			int rand = r.nextInt(colors.length());
-			this.key += colors.charAt(rand);
+			StringBuilder sb = new StringBuilder(colores);
+			int rand = r.nextInt(colores.length());
+			clave += colores.charAt(rand);
 			sb.deleteCharAt(rand);
-			colors = sb.toString();
+			colores = sb.toString();
 		}
+		this.clave = new Combinacion(clave, 0, 0);
 	}
 
-	public ArrayList<Combination> getCombinations() {
-		return combs;
-	}
+	public boolean comprobarPropuesta(String propuesta) {
+		int muertos = 0;
+		int heridos = 0;
 
-	public boolean checkCombination(String comb) {
-		int dead = 0;
-		int wounded = 0;
-
-		if(comb.equals(key)) {
+		if(propuesta.equals(clave.getValor())) {
 			return true;
 		} else {
-			for(int i = 0; i < key.length(); i++) {
-				if(key.charAt(i) == comb.charAt(i)) {
-					dead++;
+			for(int i = 0; i < clave.getValor().length(); i++) {
+				if(clave.getValor().charAt(i) == propuesta.charAt(i)) {
+					muertos++;
 				}
 			}
-			for(char c : comb.toCharArray()) {
-				if(key.indexOf(c) >= 0) {
-					wounded++;
+			for(char c : propuesta.toCharArray()) {
+				if(clave.getValor().indexOf(c) >= 0) {
+					heridos++;
 				}
 			}
-			wounded -= dead; 
-			combs.add(new Combination(comb, dead, wounded));
+			heridos -= muertos; 
+			propuestas.add(new Combinacion(propuesta, muertos, heridos));
 			return false;
 		}
-	}	
+	}
+
+	public ArrayList<Combinacion> getPropuestas() {
+		return propuestas;
+	}
+
 }
