@@ -78,3 +78,57 @@ class Combinacion {
 Main --> "0..1" Mastermind
 Mastermind --> "0..*" Combinacion
 ....
+
+== Tercera versión
+
+[.text-center]
+[plantuml, diagram-class3, png]
+....
+title Mastermind v3.0 - Diagrama de Clases
+
+class Mastermind {
+	-secretCombination : SecretCombination
+	-proposedCombinations : ArrayList<ProposedCombination>
+	-results : ArrayList<Result>
+	+Mastermind()
+	+main(String[]) : void
+	+play() : void
+}
+
+class Combination {
+	-colors : ArrayList<Color>
+}
+
+class ProposedCombination {
+	+read() : void
+	+check() : void
+}
+
+class SecretCombination {
+	+getResult() : void
+}
+
+class Result {
+	-dead : int
+	-wounded : int
+	+print() : void
+}
+
+enum Color {
+	r
+	b
+	y
+	g
+	o
+	p
+}
+
+Mastermind *-- "0..10" ProposedCombination
+Mastermind *-- "1" SecretCombination
+Mastermind *-- "0..10" Result
+Combination *-- "4" Color
+Combination <|-- SecretCombination
+Combination <|-- ProposedCombination
+ProposedCombination <.. SecretCombination
+Result <.. SecretCombination
+....
