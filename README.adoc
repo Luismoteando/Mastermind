@@ -7,36 +7,36 @@ En esta primera versión, se ha cometido el error de comenzar la implementación
 [.text-center]
 [plantuml, diagram-class1, png]
 ....
-title Mastermind v1.0 - Diagrama de Clases
+title Diagrama de Clases  v1.0
 class Main {
-    +{static} read : Scanner
-    +{static} game : Mastermind
-    +{static} main(String[]) : void
-    +{static} printCombinations() : void
+    +{static} read: Scanner
+    +{static} game: Mastermind
+    +{static} main(String[]): void
+    +{static} printCombinations(): void
 }
 
 class Mastermind {
-    -key : String
-    -combs : ArrayList<Combination>
+    -key: String
+    -combs: ArrayList<Combination>
     +Mastermind()
-    +getKey() : String
-    +setKey() : void
-    +getCombinations() : ArrayList<Combination>
-    +checkCombination(String) : boolean
+    +getKey(): String
+    +setKey(): void
+    +getCombinations(): ArrayList<Combination>
+    +checkCombination(String): boolean
 }
 
 class Combination {
-    -colors : String
-    -dead : int
-    -wounded : int
+    -colors: String
+    -dead: int
+    -wounded: int
     +Combination()
-    +toString() : String
-    +getColors() : String
-    +setColors(String) : void
-    +getDead() : int
-    +setDead(int) : void
-    +getWounded() : int
-    +setWounded() : void
+    +toString(): String
+    +getColors(): String
+    +setColors(String): void
+    +getDead(): int
+    +setDead(int): void
+    +getWounded(): int
+    +setWounded(): void
 }
 
 Main --> "0..1" Mastermind
@@ -48,31 +48,31 @@ Mastermind --> "0..*" Combination
 [.text-center]
 [plantuml, diagram-class2, png]
 ....
-title Mastermind v2.0 - Diagrama de Clases
+title Diagrama de Clases  v2.0
 class Main {
-    +{static} leer : Scanner
-    +{static} partida : Mastermind
-    +{static} main(String[]) : void
-    +{static} imprimirPropuestas() : void
+    +{static} leer: Scanner
+    +{static} partida: Mastermind
+    +{static} main(String[]): void
+    +{static} imprimirPropuestas(): void
 }
 
 class Mastermind {
-    -colores : String
-    -clave : Combinacion
-    -propuestas : ArrayList<Combinacion>
+    -colores: String
+    -clave: Combinacion
+    -propuestas: ArrayList<Combinacion>
     +Mastermind(String)
-    +generarClave() : void
-    +comprobarPropuesta(String) : boolean
-    +getPropuestas() : ArrayList<Combinacion>
+    +generarClave(): void
+    +comprobarPropuesta(String): boolean
+    +getPropuestas(): ArrayList<Combinacion>
 }
 
 class Combinacion {
-    -valor : String
-    -muertos : int
-    -heridos : int
+    -valor: String
+    -muertos: int
+    -heridos: int
     +Combinacion()
-    +toString() : String
-    +getValor() : String
+    +toString(): String
+    +getValor(): String
 }
 
 Main --> "0..1" Mastermind
@@ -84,34 +84,34 @@ Mastermind --> "0..*" Combinacion
 [.text-center]
 [plantuml, diagram-class3, png]
 ....
-title Mastermind v3.0 - Diagrama de Clases
+title Diagrama de Clases  v3.0
 
 class Mastermind {
-	-secretCombination : SecretCombination
-	-proposedCombinations : ArrayList<ProposedCombination>
-	-results : ArrayList<Result>
+	-secretCombination: SecretCombination
+	-proposedCombinations: ArrayList<ProposedCombination>
+	-results: ArrayList<Result>
 	+Mastermind()
-	+main(String[]) : void
-	+play() : void
+	+main(String[]): void
+	+play(): void
 }
 
 class Combination {
-	-colors : ArrayList<Color>
+	-colors: ArrayList<Color>
 }
 
 class ProposedCombination {
-	+read() : void
-	+check() : void
+	+read(): void
+	+check(): void
 }
 
 class SecretCombination {
-	+getResult() : void
+	+getResult(): void
 }
 
 class Result {
-	-dead : int
-	-wounded : int
-	+print() : void
+	-dead: int
+	-wounded: int
+	+print(): void
 }
 
 enum Color {
@@ -129,6 +129,105 @@ Mastermind *-- "0..10" Result
 Combination *-- "4" Color
 Combination <|-- SecretCombination
 Combination <|-- ProposedCombination
+ProposedCombination <.. SecretCombination
+Result <.. SecretCombination
+....
+
+== Cuarta versión
+
+[.text-center]
+[plantuml, diagram-class4, png]
+....
+title Diagrama de Clases v4.0
+
+class Mastermind {
+	+Mastermind()
+	+main(String[]): void
+	+play(): void
+}
+
+class GameView {
+	+GameView(Game)
+	+interact(): void
+	+retry(): boolean
+}
+
+class Game {
+	-ATTEMPTS: int
+	+Game()
+	+addProposedCombination(ProposedCombination): void
+	+isFinished(): boolean
+	+isWinner(): boolean
+	+getResults(): ArrayList<Result>
+}
+
+class ProposedCombinationView {
+	+ProposedCombinationView()
+	+read(): ProposedCombination
+}
+
+class Combination {
+	-LENGTH: int
+	+Combination()
+	+getLength(): int
+}
+
+class ProposedCombination {
+	+ProposedCombination(String)
+	+check(): boolean
+	+contains(Color,int): boolean
+	+contains(Color): boolean
+	+getColors(): ArrayList<Color>
+}
+
+class SecretCombination {
+	+SecretCombination()
+	+getResult(ProposedCombination): Result
+}
+
+enum Color {
+	R: Color
+	B: Color
+	Y: Color
+	G: Color
+	O: Color
+	P: Color
+	color: String
+	+Color(String)
+	+length(): int
+}
+
+class ResultView {
+	+ResultView(ArrayList<Result>)
+	+print(): void
+}
+
+class Result {
+	-dead: int
+	-wounded: int
+	+Result(ProposedCombination,int,int)
+	+toString(): String
+	+isWinner(): boolean
+}
+
+Mastermind *-- "0..1" Game
+Mastermind *-- "0..1" GameView
+GameView *-- "0..1" Game
+ProposedCombination <.. GameView
+ResultView <.. GameView
+ResultView *-- "0..1" Result
+Combination <.. Result
+Color <.. SecretCombination
+Color <.. ProposedCombination
+ProposedCombination *-- "0..1" Result
+Game *-- "0..10" ProposedCombination
+Game *-- "1" SecretCombination
+Game *-- "0..10" Result
+Combination *-- "4" Color
+Combination <|-- SecretCombination
+Combination <|-- ProposedCombination
+ProposedCombinationView <.. GameView
+ProposedCombination <.. ProposedCombinationView
 ProposedCombination <.. SecretCombination
 Result <.. SecretCombination
 ....

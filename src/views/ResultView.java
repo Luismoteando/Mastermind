@@ -1,19 +1,18 @@
 package views;
 
-import java.util.ArrayList;
-
+import controllers.ProposalController;
 import models.Result;
 
 public class ResultView {
 	
-	private ArrayList<Result> results;
+	private ProposalController proposalController;
 
-	public ResultView(ArrayList<Result> results) {
-		this.results = results;
+	public ResultView(ProposalController proposalController) {
+		this.proposalController = proposalController;
 	}
 
-	public void print() {
-		for(Result result : results) {
+	public void printResults() {
+		for(Result result : proposalController.getResults()) {
 			System.out.println(result.toString());
 		}
 	}

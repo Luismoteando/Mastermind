@@ -38,4 +38,10 @@ public class Game {
 	public ArrayList<Result> getResults() {
 		return this.results;
 	}
+
+	public void clear() {
+		this.secretCombination = new SecretCombination();
+		this.proposedCombinations = new ArrayList<ProposedCombination>();
+		this.results = new ArrayList<Result>();
+	}
 }

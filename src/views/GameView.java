@@ -1,49 +1,45 @@
 package views;
 
-import java.util.Scanner;
-
-import models.Game;
-import models.ProposedCombination;
+import controllers.ProposalController;
+import controllers.RetryController;
+import controllers.StartController;
 
 public class GameView {
+	
+	private StartView startView;
 
-	protected Game game;
+	private ProposalView proposalView;
 
-	public GameView(Game game) {
-		this.game = game;
+	private RetryView retryView;
+
+	public GameView(StartController startController, ProposalController proposalController, RetryController retryController) {
+		this.startView = new StartView(startController);
+		this.proposalView = new ProposalView(proposalController);
+		this.retryView = new RetryView(retryController);
 	}
 
 	public void interact() {
-		boolean finished = false;
-		boolean retry = false;
+		boolean retry;
 		do {
-			System.out.println("¿Juegas a Mastermind?");
+			this.start();
+			boolean finished;
 			do {
-				System.out.println("Propón una combinación de cuatro colores (R, B, Y, G, O, P):");
-				ProposedCombination proposedCombination = new ProposedCombinationView().read();
-				while (!proposedCombination.check()) {
-					System.out.println("** Atención **\n"
-							+ "La combinación debe constar de cuatro caracteres sin repetir entre los siguientes: R, B, Y, G, O, P.\n"
-							+ "Inténtalo de nuevo.");
-					proposedCombination = new ProposedCombinationView().read();
-				}
-				this.game.addProposedCombination(proposedCombination);
-				new ResultView(this.game.getResults()).print();
-				finished = this.game.isFinished();
+				finished = this.propose();
 			} while (!finished);
-			System.out.println("Se han agotado los intentos. ¿Deseas jugar otra partida? s/n");
 			retry = this.retry();
 		} while (retry);
 	}
+	
 
-	private boolean retry() {
-		Scanner scanner = new Scanner(System.in);
-		String retry;
-		retry = scanner.next();
-		if (retry.equals("s")) {
-			return true;
-		} else {
-			return false;
-		}
+	public void start() {
+		this.startView.interact();
+	}
+	
+	public boolean propose() {
+		return this.proposalView.interact();
+	}
+
+	public boolean retry() {
+		return this.retryView.interact();
 	}
 }
