@@ -6,7 +6,7 @@ import controllers.ProposalController;
 import models.ProposedCombination;
 
 public class ProposedCombinationView {
-	
+
 	private ProposalController proposalController;
 
 	public ProposedCombinationView(ProposalController proposalController) {

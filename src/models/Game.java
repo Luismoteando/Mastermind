@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class Game {
 
 	private SecretCombination secretCombination;
-	
+
 	private ArrayList<ProposedCombination> proposedCombinations;
-	
+
 	private ArrayList<Result> results;
 
 	private static final int ATTEMPTS = 10;
@@ -30,11 +30,11 @@ public class Game {
 			return false;
 		}
 	}
-	
+
 	public boolean isWinner() {
 		return this.results.get(results.size() - 1).isWinner();
 	}
-	
+
 	public ArrayList<Result> getResults() {
 		return this.results;
 	}

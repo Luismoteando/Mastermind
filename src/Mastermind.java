@@ -8,7 +8,7 @@ import controllers.StartController;
 public class Mastermind {
 
 	private Game game;
-	
+
 	private GameView gameView;
 
 	private StartController startController;

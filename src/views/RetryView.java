@@ -5,7 +5,7 @@ import java.util.Scanner;
 import controllers.RetryController;
 
 public class RetryView {
-	
+
 	private RetryController retryController;
 
 	public RetryView(RetryController retryController) {

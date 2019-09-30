@@ -33,8 +33,8 @@ public class ProposedCombination extends Combination {
 
 	public boolean check() {
 		Set<Color> set = new HashSet<Color>(colors);
-		if(colors.size() == LENGTH) {
-			if(set.size() < colors.size()){
+		if (colors.size() == LENGTH) {
+			if (set.size() < colors.size()) {
 				return false;
 			} else {
 				return true;
@@ -43,7 +43,7 @@ public class ProposedCombination extends Combination {
 			return false;
 		}
 	}
-	
+
 	public boolean contains(Color color, int position) {
 		return this.colors.get(position) == color;
 	}
@@ -56,7 +56,7 @@ public class ProposedCombination extends Combination {
 		}
 		return false;
 	}
-	
+
 	public ArrayList<Color> getColors() {
 		return this.colors;
 	}

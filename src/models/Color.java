@@ -8,7 +8,7 @@ public enum Color {
 	private Color(String color) {
 		this.color = color;
 	}
-	
+
 	public static int length() {
 		return Color.values().length;
 	}

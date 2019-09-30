@@ -6,7 +6,7 @@ import java.util.Random;
 public class SecretCombination extends Combination {
 
 	public SecretCombination() {
-		for(Color color : Color.values()) {
+		for (Color color : Color.values()) {
 			this.colors.add(color);
 		}
 		Random random = new Random(System.currentTimeMillis());
@@ -15,7 +15,7 @@ public class SecretCombination extends Combination {
 		}
 		Collections.shuffle(this.colors);
 	}
-	
+
 	public Result getResult(ProposedCombination proposedCombination) {
 		int blacks = 0;
 		for (int i = 0; i < this.colors.size(); i++) {

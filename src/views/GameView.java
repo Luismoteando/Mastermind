@@ -5,14 +5,15 @@ import controllers.RetryController;
 import controllers.StartController;
 
 public class GameView {
-	
+
 	private StartView startView;
 
 	private ProposalView proposalView;
 
 	private RetryView retryView;
 
-	public GameView(StartController startController, ProposalController proposalController, RetryController retryController) {
+	public GameView(StartController startController, ProposalController proposalController,
+			RetryController retryController) {
 		this.startView = new StartView(startController);
 		this.proposalView = new ProposalView(proposalController);
 		this.retryView = new RetryView(retryController);
@@ -29,12 +30,11 @@ public class GameView {
 			retry = this.retry();
 		} while (retry);
 	}
-	
 
 	public void start() {
 		this.startView.interact();
 	}
-	
+
 	public boolean propose() {
 		return this.proposalView.interact();
 	}

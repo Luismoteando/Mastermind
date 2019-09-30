@@ -6,9 +6,9 @@ import models.ProposedCombination;
 public class ProposalView {
 
 	private ProposalController proposalController;
-	
+
 	private ProposedCombinationView proposedCombinationView;
-	
+
 	private ResultView resultView;
 
 	public ProposalView(ProposalController proposalController) {

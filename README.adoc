@@ -1,9 +1,5 @@
 = Mastermind: Análisis y Diseño Orientado a Objetos
 
-== Primera versión
-
-En esta primera versión, se ha cometido el error de comenzar la implementación sin llevar a cabo un diseño previo.
-
 [.text-center]
 [plantuml, diagram-class1, png]
 ....
@@ -43,8 +39,6 @@ Main --> "0..1" Mastermind
 Mastermind --> "0..*" Combination
 ....
 
-== Segunda versión
-
 [.text-center]
 [plantuml, diagram-class2, png]
 ....
@@ -78,8 +72,6 @@ class Combinacion {
 Main --> "0..1" Mastermind
 Mastermind --> "0..*" Combinacion
 ....
-
-== Tercera versión
 
 [.text-center]
 [plantuml, diagram-class3, png]
@@ -123,17 +115,15 @@ enum Color {
 	p
 }
 
-Mastermind *-- "0..10" ProposedCombination
-Mastermind *-- "1" SecretCombination
-Mastermind *-- "0..10" Result
-Combination *-- "4" Color
+Mastermind *--> "0..10" ProposedCombination
+Mastermind *--> "1" SecretCombination
+Mastermind *--> "0..10" Result
+Combination *--> "4" Color
 Combination <|-- SecretCombination
 Combination <|-- ProposedCombination
 ProposedCombination <.. SecretCombination
 Result <.. SecretCombination
 ....
-
-== Cuarta versión
 
 [.text-center]
 [plantuml, diagram-class4, png]
@@ -210,24 +200,187 @@ class Result {
 	+isWinner(): boolean
 }
 
-Mastermind *-- "0..1" Game
-Mastermind *-- "0..1" GameView
-GameView *-- "0..1" Game
+Mastermind *--> "0..1" Game
+Mastermind *--> "0..1" GameView
+GameView *--> "0..1" Game
 ProposedCombination <.. GameView
 ResultView <.. GameView
-ResultView *-- "0..1" Result
+ResultView *--> "0..1" Result
 Combination <.. Result
 Color <.. SecretCombination
 Color <.. ProposedCombination
-ProposedCombination *-- "0..1" Result
-Game *-- "0..10" ProposedCombination
-Game *-- "1" SecretCombination
-Game *-- "0..10" Result
-Combination *-- "4" Color
+ProposedCombination *--> "0..1" Result
+Game *--> "0..10" ProposedCombination
+Game *--> "1" SecretCombination
+Game *--> "0..10" Result
+Combination *--> "4" Color
 Combination <|-- SecretCombination
 Combination <|-- ProposedCombination
 ProposedCombinationView <.. GameView
 ProposedCombination <.. ProposedCombinationView
 ProposedCombination <.. SecretCombination
 Result <.. SecretCombination
+....
+
+
+[.text-center]
+[plantuml, diagram-class5, png]
+....
+title Diagrama de Clases v5.0
+
+class Mastermind {
+	+Mastermind()
+	+play(): void
+	+main(String[]): void
+}
+
+class GameView {
+	+GameView(StartController,ProposalController,RetryController)
+	+interact(): void
+	+start(): void
+	+propose(): boolean
+	+retry(): boolean
+}
+
+class StartView {
+	+StartView(StartController)
+	+interact(): void
+}
+
+class ProposalView {
+	+ProposalView(ProposalController)
+	+interact(): boolean
+}
+
+
+class RetryView {
+	+RetryView(RetryController)
+	+interact(): boolean
+}
+
+class ProposedCombinationView {
+	+ProposedCombinationView(ProposalController)
+	+read(): ProposedCombination
+}
+
+class ResultView {
+	+ResultView(ProposalController)
+	+printResults(): void
+}
+
+class SecretCombinationView {
+	+SecretCombinationView(StartController)
+	+interact(): void
+}
+
+class Controller {
+	+Controller(Game)
+}
+
+class StartController {
+	+StartController(Game)
+	+getLength(): int
+}
+
+class ProposalController {
+	+ProposalController(Game)
+	+addProposedCombination(ProposedCombination): void
+	+isFinished(): boolean
+	+isWinner(): boolean
+	+getResults(): ArrayList<Result>
+}
+
+class RetryController {
+	+RetryController(Game)
+	+retry(): void
+}
+
+class Game {
+	-ATTEMPTS: int
+	+Game()
+	+addProposedCombination(ProposedCombination): void
+	+isFinished(): boolean
+	+isWinner(): boolean
+	+getResults(): ArrayList<Result>
+	+clear(): void
+}
+
+class Combination {
+	-LENGTH: int
+	+Combination()
+	+getLength(): int
+}
+
+class ProposedCombination {
+	+ProposedCombination(String)
+	+check(): boolean
+	+contains(Color,int): boolean
+	+contains(Color): boolean
+	+getColors(): ArrayList<Color>
+}
+
+class SecretCombination {
+	+SecretCombination()
+	+getResult(ProposedCombination): Result
+}
+
+enum Color {
+	R: Color
+	B: Color
+	Y: Color
+	G: Color
+	O: Color
+	P: Color
+	color: String
+	+Color(String)
+	+length(): int
+}
+
+class Result {
+	-dead: int
+	-wounded: int
+	+Result(ProposedCombination,int,int)
+	+toString(): String
+	+isWinner(): boolean
+}
+
+Mastermind *--> "0..1" ProposalController
+Mastermind *--> "0..1" StartController
+Mastermind *--> "0..1" RetryController
+Mastermind *--> "0..1" GameView
+Mastermind *--> "0..1" Game
+
+GameView *--> "0..1" ProposalView
+GameView *--> "0..1" StartView
+GameView *--> "0..1" RetryView
+
+Controller *--> "0..1" Game
+Controller <|-- StartController
+Controller <|-- ProposalController
+Controller <|-- RetryController
+
+ProposalView *--> "0..1" ProposedCombinationView
+ProposalView *--> "0..1" ResultView
+ProposalView --> "0..1" ProposalController
+
+StartView *--> "0..1" SecretCombinationView
+StartView --> "0..1" StartController
+
+RetryView --> "0..1" RetryController
+
+ProposedCombinationView --> "0..1" ProposalController
+
+ResultView --> "0..1" ProposalController
+
+SecretCombinationView --> "0..1" StartController
+
+Game *--> "0..10" ProposedCombination
+Game *--> "1" SecretCombination
+Game *--> "0..10" Result
+
+Result *--> "0..1" ProposedCombination
+
+Combination *--> "4" Color
+Combination <|-- SecretCombination
+Combination <|-- ProposedCombination
 ....

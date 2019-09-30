@@ -4,7 +4,7 @@ import controllers.ProposalController;
 import models.Result;
 
 public class ResultView {
-	
+
 	private ProposalController proposalController;
 
 	public ResultView(ProposalController proposalController) {
@@ -12,7 +12,7 @@ public class ResultView {
 	}
 
 	public void printResults() {
-		for(Result result : proposalController.getResults()) {
+		for (Result result : proposalController.getResults()) {
 			System.out.println(result.toString());
 		}
 	}
