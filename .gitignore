@@ -1,10 +1,11 @@
 # idea
 .idea/
+iwvg-mastermind-luismiguel-ortiz.iml
 
 # eclipse
 .settings/
 .classpath
 .project
 
-#iml
-.iml
+# mac
+.DS_Store
