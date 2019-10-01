@@ -3,7 +3,7 @@
 == Contenidos
 
 1. link:#final-version[Versión final]
-2. link:#final-version[Versiones anteriores]
+2. link:#previous-versions[Versiones anteriores]
 
 [#final-version]
 == Versión final
