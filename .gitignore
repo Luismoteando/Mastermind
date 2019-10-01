@@ -1,9 +1,10 @@
 # idea
 .idea/
-target/
 
 # eclipse
-out/
+.settings/
 .classpath
 .project
-.settings
+
+#iml
+.iml
