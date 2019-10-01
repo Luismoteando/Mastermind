@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="524px" preserveAspectRatio="none"
+     style="width:272px;height:524px;" version="1.1" viewBox="0 0 272 524" width="272px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1i2jhkn543lls" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="220"
+              x="29.5" y="17.4023">Diagrama de Clases v2.0
+        </text><!--class Main-->
+        <rect fill="#FEFECE" filter="url(#f1i2jhkn543lls)" height="99.8203" id="Main"
+              style="stroke: #A80036; stroke-width: 1.5;" width="169" x="49" y="29.1992"/>
+        <ellipse cx="115.75" cy="45.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M118.2231,51.3423 Q117.6421,51.6411 117.0029,51.7905 Q116.3638,51.9399 115.6582,51.9399 Q113.1514,51.9399 111.8315,50.2881 Q110.5117,48.6362 110.5117,45.5151 Q110.5117,42.3857 111.8315,40.7339 Q113.1514,39.082 115.6582,39.082 Q116.3638,39.082 117.0112,39.2314 Q117.6587,39.3809 118.2231,39.6797 L118.2231,42.4023 Q117.5923,41.8213 116.9988,41.5515 Q116.4053,41.2817 115.7744,41.2817 Q114.4297,41.2817 113.7449,42.3484 Q113.0601,43.415 113.0601,45.5151 Q113.0601,47.6069 113.7449,48.6736 Q114.4297,49.7402 115.7744,49.7402 Q116.4053,49.7402 116.9988,49.4705 Q117.5923,49.2007 118.2231,48.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27"
+              x="136.25" y="49.7344">Main
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="50" x2="217" y1="61.1992" y2="61.1992"/>
+        <ellipse cx="60" cy="73.1768" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              text-decoration="underline" textLength="69" x="69" y="75.834">leer: Scanner
+        </text>
+        <ellipse cx="60" cy="86.1318" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              text-decoration="underline" textLength="107" x="69" y="88.7891">partida: Mastermind
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="50" x2="217" y1="95.1094" y2="95.1094"/>
+        <ellipse cx="60" cy="107.0869" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              text-decoration="underline" textLength="103" x="69" y="109.7441">main(String[]): void
+        </text>
+        <ellipse cx="60" cy="120.042" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              text-decoration="underline" textLength="143" x="69" y="122.6992">imprimirPropuestas(): void
+        </text><!--class Mastermind-->
+        <rect fill="#FEFECE" filter="url(#f1i2jhkn543lls)" height="138.6855" id="Mastermind"
+              style="stroke: #A80036; stroke-width: 1.5;" width="255" x="6" y="189.1992"/>
+        <ellipse cx="95.25" cy="205.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M97.7231,211.3423 Q97.1421,211.6411 96.5029,211.7905 Q95.8638,211.9399 95.1582,211.9399 Q92.6514,211.9399 91.3315,210.2881 Q90.0117,208.6362 90.0117,205.5151 Q90.0117,202.3857 91.3315,200.7339 Q92.6514,199.082 95.1582,199.082 Q95.8638,199.082 96.5112,199.2314 Q97.1587,199.3809 97.7231,199.6797 L97.7231,202.4023 Q97.0923,201.8213 96.4988,201.5515 Q95.9053,201.2817 95.2744,201.2817 Q93.9297,201.2817 93.2449,202.3484 Q92.5601,203.415 92.5601,205.5151 Q92.5601,207.6069 93.2449,208.6736 Q93.9297,209.7402 95.2744,209.7402 Q95.9053,209.7402 96.4988,209.4705 Q97.0923,209.2007 97.7231,208.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="68"
+              x="115.75" y="209.7344">Mastermind
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="260" y1="221.1992" y2="221.1992"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="230.1768"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78"
+              x="26" y="235.834">colores: String
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="243.1318"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104"
+              x="26" y="248.7891">clave: Combinacion
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="256.0869"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="205"
+              x="26" y="261.7441">propuestas: ArrayList&lt;Combinacion&gt;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="260" y1="268.0645" y2="268.0645"/>
+        <ellipse cx="17" cy="280.042" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="26" y="282.6992">Mastermind(String)
+        </text>
+        <ellipse cx="17" cy="292.9971" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108"
+              x="26" y="295.6543">generarClave(): void
+        </text>
+        <ellipse cx="17" cy="305.9521" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203"
+              x="26" y="308.6094">comprobarPropuesta(String): boolean
+        </text>
+        <ellipse cx="17" cy="318.9072" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="229"
+              x="26" y="321.5645">getPropuestas(): ArrayList&lt;Combinacion&gt;
+        </text><!--class Combinacion-->
+        <rect fill="#FEFECE" filter="url(#f1i2jhkn543lls)" height="125.7305" id="Combinacion"
+              style="stroke: #A80036; stroke-width: 1.5;" width="117" x="75" y="388.1992"/>
+        <ellipse cx="94.95" cy="404.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M97.4231,410.3423 Q96.8421,410.6411 96.2029,410.7905 Q95.5638,410.9399 94.8582,410.9399 Q92.3514,410.9399 91.0315,409.2881 Q89.7117,407.6362 89.7117,404.5151 Q89.7117,401.3857 91.0315,399.7339 Q92.3514,398.082 94.8582,398.082 Q95.5638,398.082 96.2112,398.2314 Q96.8587,398.3809 97.4231,398.6797 L97.4231,401.4023 Q96.7923,400.8213 96.1988,400.5515 Q95.6053,400.2817 94.9744,400.2817 Q93.6297,400.2817 92.9449,401.3484 Q92.2601,402.415 92.2601,404.5151 Q92.2601,406.6069 92.9449,407.6736 Q93.6297,408.7402 94.9744,408.7402 Q95.6053,408.7402 96.1988,408.4705 Q96.7923,408.2007 97.4231,407.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="74"
+              x="110.05" y="408.7344">Combinacion
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="76" x2="191" y1="420.1992" y2="420.1992"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="83" y="429.1768"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="65"
+              x="95" y="434.834">valor: String
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="83" y="442.1318"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="65"
+              x="95" y="447.7891">muertos: int
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="83" y="455.0869"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61"
+              x="95" y="460.7441">heridos: int
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="76" x2="191" y1="467.0645" y2="467.0645"/>
+        <ellipse cx="86" cy="479.042" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79"
+              x="95" y="481.6992">Combinacion()
+        </text>
+        <ellipse cx="86" cy="491.9971" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89"
+              x="95" y="494.6543">toString(): String
+        </text>
+        <ellipse cx="86" cy="504.9521" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91"
+              x="95" y="507.6094">getValor(): String
+        </text><!--link Main to Mastermind-->
+        <path d="M133.5,129.2 C133.5,146.1729 133.5,165.5226 133.5,183.9967 " fill="none" id="Main-Mastermind"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="133.5,189.1814,137.5,180.1814,133.5,184.1814,129.5,180.1814,133.5,189.1814"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="108.1875" y="178.3601">0..1
+        </text><!--link Mastermind to Combinacion-->
+        <path d="M133.5,328.4683 C133.5,346.1177 133.5,365.0553 133.5,382.6442 " fill="none" id="Mastermind-Combinacion"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="133.5,388.0566,137.5,379.0566,133.5,383.0566,129.5,379.0566,133.5,388.0566"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22"
+              x="110.2281" y="377.4905">0..*
+        </text><!--
+@startuml
+title Diagrama de Clases  v2.0
+class Main {
+    +{static} leer: Scanner
+    +{static} partida: Mastermind
+    +{static} main(String[]): void
+    +{static} imprimirPropuestas(): void
+}
+
+class Mastermind {
+    -colores: String
+    -clave: Combinacion
+    -propuestas: ArrayList<Combinacion>
+    +Mastermind(String)
+    +generarClave(): void
+    +comprobarPropuesta(String): boolean
+    +getPropuestas(): ArrayList<Combinacion>
+}
+
+class Combinacion {
+    -valor: String
+    -muertos: int
+    -heridos: int
+    +Combinacion()
+    +toString(): String
+    +getValor(): String
+}
+
+Main - -> "0..1" Mastermind
+Mastermind - -> "0..*" Combinacion
+@enduml
+
+PlantUML version 1.2019.06(Fri May 24 19:10:25 CEST 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+12-b304.56
+Operating System: Mac OS X
+OS Version: 10.14.6
+Default Encoding: UTF-8
+Language: es
+Country: ES
+-->
+    </g>
+</svg>

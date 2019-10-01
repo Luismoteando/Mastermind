@@ -1,21 +1,20 @@
 package views;
 
-import java.util.Scanner;
-
 import controllers.ProposalController;
 import models.ProposedCombination;
 
+import java.util.Scanner;
+
 public class ProposedCombinationView {
 
-	private ProposalController proposalController;
+    private ProposalController proposalController;
 
-	public ProposedCombinationView(ProposalController proposalController) {
-		this.proposalController = proposalController;
-	}
+    public ProposedCombinationView(ProposalController proposalController) {
+        this.proposalController = proposalController;
+    }
 
-	public ProposedCombination read() {
-		Scanner scanner = new Scanner(System.in);
-		ProposedCombination proposedCombination = new ProposedCombination(scanner.next());
-		return proposedCombination;
-	}
+    ProposedCombination read() {
+        Scanner scanner = new Scanner(System.in);
+        return new ProposedCombination(scanner.next());
+    }
 }

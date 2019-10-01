@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="1030px" preserveAspectRatio="none"
+     style="width:2023px;height:1030px;" version="1.1" viewBox="0 0 2023 1030" width="2023px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1nbzsa65j9ee6" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="214"
+              x="894" y="17.4023">Diagrama de Clases v5.0
+        </text><!--class Mastermind-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="86.8652" id="Mastermind"
+              style="stroke: #A80036; stroke-width: 1.5;" width="129" x="964.8692" y="29.1992"/>
+        <ellipse cx="992.9192" cy="45.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M995.3923,51.3423 Q994.8113,51.6411 994.1721,51.7905 Q993.533,51.9399 992.8274,51.9399 Q990.3206,51.9399 989.0007,50.2881 Q987.6809,48.6362 987.6809,45.5151 Q987.6809,42.3857 989.0007,40.7339 Q990.3206,39.082 992.8274,39.082 Q993.533,39.082 994.1804,39.2314 Q994.8279,39.3809 995.3923,39.6797 L995.3923,42.4023 Q994.7615,41.8213 994.168,41.5515 Q993.5745,41.2817 992.9436,41.2817 Q991.5989,41.2817 990.9141,42.3484 Q990.2293,43.415 990.2293,45.5151 Q990.2293,47.6069 990.9141,48.6736 Q991.5989,49.7402 992.9436,49.7402 Q993.5745,49.7402 994.168,49.4705 Q994.7615,49.2007 995.3923,48.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="68"
+              x="1009.8192" y="49.7344">Mastermind
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="965.8692" x2="1092.8692" y1="61.1992" y2="61.1992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="965.8692" x2="1092.8692" y1="69.1992" y2="69.1992"/>
+        <ellipse cx="975.8692" cy="81.1768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="984.8692" y="83.834">Mastermind()
+        </text>
+        <ellipse cx="975.8692" cy="94.1318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59"
+              x="984.8692" y="96.7891">play(): void
+        </text>
+        <ellipse cx="975.8692" cy="107.0869" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="984.8692" y="109.7441">main(String[]): void
+        </text><!--class GameView-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="112.7754" id="GameView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="359" x="523.8692" y="176.1992"/>
+        <ellipse cx="668.6192" cy="192.1992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M671.0923,198.3423 Q670.5113,198.6411 669.8721,198.7905 Q669.233,198.9399 668.5274,198.9399 Q666.0206,198.9399 664.7007,197.2881 Q663.3809,195.6362 663.3809,192.5151 Q663.3809,189.3857 664.7007,187.7339 Q666.0206,186.082 668.5274,186.082 Q669.233,186.082 669.8804,186.2314 Q670.5279,186.3809 671.0923,186.6797 L671.0923,189.4023 Q670.4615,188.8213 669.868,188.5515 Q669.2745,188.2817 668.6436,188.2817 Q667.2989,188.2817 666.6141,189.3484 Q665.9293,190.415 665.9293,192.5151 Q665.9293,194.6069 666.6141,195.6736 Q667.2989,196.7402 668.6436,196.7402 Q669.2745,196.7402 669.868,196.4705 Q670.4615,196.2007 671.0923,195.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="61"
+              x="689.1192" y="196.7344">GameView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="524.8692" x2="881.8692" y1="208.1992" y2="208.1992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="524.8692" x2="881.8692" y1="216.1992" y2="216.1992"/>
+        <ellipse cx="534.8692" cy="228.1768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="333"
+              x="543.8692" y="230.834">GameView(StartController,ProposalController,RetryController)
+        </text>
+        <ellipse cx="534.8692" cy="241.1318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78"
+              x="543.8692" y="243.7891">interact(): void
+        </text>
+        <ellipse cx="534.8692" cy="254.0869" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62"
+              x="543.8692" y="256.7441">start(): void
+        </text>
+        <ellipse cx="534.8692" cy="267.042" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102"
+              x="543.8692" y="269.6992">propose(): boolean
+        </text>
+        <ellipse cx="534.8692" cy="279.9971" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="83"
+              x="543.8692" y="282.6543">retry(): boolean
+        </text><!--class StartView-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="73.9102" id="StartView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="163" x="104.8692" y="349.1992"/>
+        <ellipse cx="155.6192" cy="365.1992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M158.0923,371.3423 Q157.5113,371.6411 156.8721,371.7905 Q156.233,371.9399 155.5274,371.9399 Q153.0206,371.9399 151.7007,370.2881 Q150.3809,368.6362 150.3809,365.5151 Q150.3809,362.3857 151.7007,360.7339 Q153.0206,359.082 155.5274,359.082 Q156.233,359.082 156.8804,359.2314 Q157.5279,359.3809 158.0923,359.6797 L158.0923,362.4023 Q157.4615,361.8213 156.868,361.5515 Q156.2745,361.2817 155.6436,361.2817 Q154.2989,361.2817 153.6141,362.3484 Q152.9293,363.415 152.9293,365.5151 Q152.9293,367.6069 153.6141,368.6736 Q154.2989,369.7402 155.6436,369.7402 Q156.2745,369.7402 156.868,369.4705 Q157.4615,369.2007 158.0923,368.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="53"
+              x="176.1192" y="369.7344">StartView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="105.8692" x2="266.8692" y1="381.1992" y2="381.1992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="105.8692" x2="266.8692" y1="389.1992" y2="389.1992"/>
+        <ellipse cx="115.8692" cy="401.1768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="137"
+              x="124.8692" y="403.834">StartView(StartController)
+        </text>
+        <ellipse cx="115.8692" cy="414.1318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78"
+              x="124.8692" y="416.7891">interact(): void
+        </text><!--class ProposalView-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="73.9102" id="ProposalView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="207" x="477.8692" y="349.1992"/>
+        <ellipse cx="538.6192" cy="365.1992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M541.0923,371.3423 Q540.5113,371.6411 539.8721,371.7905 Q539.233,371.9399 538.5274,371.9399 Q536.0206,371.9399 534.7007,370.2881 Q533.3809,368.6362 533.3809,365.5151 Q533.3809,362.3857 534.7007,360.7339 Q536.0206,359.082 538.5274,359.082 Q539.233,359.082 539.8804,359.2314 Q540.5279,359.3809 541.0923,359.6797 L541.0923,362.4023 Q540.4615,361.8213 539.868,361.5515 Q539.2745,361.2817 538.6436,361.2817 Q537.2989,361.2817 536.6141,362.3484 Q535.9293,363.415 535.9293,365.5151 Q535.9293,367.6069 536.6141,368.6736 Q537.2989,369.7402 538.6436,369.7402 Q539.2745,369.7402 539.868,369.4705 Q540.4615,369.2007 541.0923,368.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="77"
+              x="559.1192" y="369.7344">ProposalView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="478.8692" x2="683.8692" y1="381.1992" y2="381.1992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="478.8692" x2="683.8692" y1="389.1992" y2="389.1992"/>
+        <ellipse cx="488.8692" cy="401.1768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="181"
+              x="497.8692" y="403.834">ProposalView(ProposalController)
+        </text>
+        <ellipse cx="488.8692" cy="414.1318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="98"
+              x="497.8692" y="416.7891">interact(): boolean
+        </text><!--class RetryView-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="73.9102" id="RetryView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="169" x="748.8692" y="349.1992"/>
+        <ellipse cx="800.6192" cy="365.1992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M803.0923,371.3423 Q802.5113,371.6411 801.8721,371.7905 Q801.233,371.9399 800.5274,371.9399 Q798.0206,371.9399 796.7007,370.2881 Q795.3809,368.6362 795.3809,365.5151 Q795.3809,362.3857 796.7007,360.7339 Q798.0206,359.082 800.5274,359.082 Q801.233,359.082 801.8804,359.2314 Q802.5279,359.3809 803.0923,359.6797 L803.0923,362.4023 Q802.4615,361.8213 801.868,361.5515 Q801.2745,361.2817 800.6436,361.2817 Q799.2989,361.2817 798.6141,362.3484 Q797.9293,363.415 797.9293,365.5151 Q797.9293,367.6069 798.6141,368.6736 Q799.2989,369.7402 800.6436,369.7402 Q801.2745,369.7402 801.868,369.4705 Q802.4615,369.2007 803.0923,368.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="57"
+              x="821.1192" y="369.7344">RetryView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="749.8692" x2="916.8692" y1="381.1992" y2="381.1992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="749.8692" x2="916.8692" y1="389.1992" y2="389.1992"/>
+        <ellipse cx="759.8692" cy="401.1768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="143"
+              x="768.8692" y="403.834">RetryView(RetryController)
+        </text>
+        <ellipse cx="759.8692" cy="414.1318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="98"
+              x="768.8692" y="416.7891">interact(): boolean
+        </text><!--class ProposedCombinationView-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="73.9102" id="ProposedCombinationView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="280" x="412.3692" y="515.6992"/>
+        <ellipse cx="471.1192" cy="531.6992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M473.5923,537.8423 Q473.0113,538.1411 472.3721,538.2905 Q471.733,538.4399 471.0274,538.4399 Q468.5206,538.4399 467.2007,536.7881 Q465.8809,535.1362 465.8809,532.0151 Q465.8809,528.8857 467.2007,527.2339 Q468.5206,525.582 471.0274,525.582 Q471.733,525.582 472.3804,525.7314 Q473.0279,525.8809 473.5923,526.1797 L473.5923,528.9023 Q472.9615,528.3213 472.368,528.0515 Q471.7745,527.7817 471.1436,527.7817 Q469.7989,527.7817 469.1141,528.8484 Q468.4293,529.915 468.4293,532.0151 Q468.4293,534.1069 469.1141,535.1736 Q469.7989,536.2402 471.1436,536.2402 Q471.7745,536.2402 472.368,535.9705 Q472.9615,535.7007 473.5923,535.1196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="154"
+              x="491.6192" y="536.2344">ProposedCombinationView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="413.3692" x2="691.3692" y1="547.6992" y2="547.6992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="413.3692" x2="691.3692" y1="555.6992" y2="555.6992"/>
+        <ellipse cx="423.3692" cy="567.6768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="254"
+              x="432.3692" y="570.334">ProposedCombinationView(ProposalController)
+        </text>
+        <ellipse cx="423.3692" cy="580.6318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="158"
+              x="432.3692" y="583.2891">read(): ProposedCombination
+        </text><!--class ResultView-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="73.9102" id="ResultView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="193" x="727.8692" y="515.6992"/>
+        <ellipse cx="789.1192" cy="531.6992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M791.5923,537.8423 Q791.0113,538.1411 790.3721,538.2905 Q789.733,538.4399 789.0274,538.4399 Q786.5206,538.4399 785.2007,536.7881 Q783.8809,535.1362 783.8809,532.0151 Q783.8809,528.8857 785.2007,527.2339 Q786.5206,525.582 789.0274,525.582 Q789.733,525.582 790.3804,525.7314 Q791.0279,525.8809 791.5923,526.1797 L791.5923,528.9023 Q790.9615,528.3213 790.368,528.0515 Q789.7745,527.7817 789.1436,527.7817 Q787.7989,527.7817 787.1141,528.8484 Q786.4293,529.915 786.4293,532.0151 Q786.4293,534.1069 787.1141,535.1736 Q787.7989,536.2402 789.1436,536.2402 Q789.7745,536.2402 790.368,535.9705 Q790.9615,535.7007 791.5923,535.1196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62"
+              x="809.6192" y="536.2344">ResultView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="728.8692" x2="919.8692" y1="547.6992" y2="547.6992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="728.8692" x2="919.8692" y1="555.6992" y2="555.6992"/>
+        <ellipse cx="738.8692" cy="567.6768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167"
+              x="747.8692" y="570.334">ResultView(ProposalController)
+        </text>
+        <ellipse cx="738.8692" cy="580.6318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102"
+              x="747.8692" y="583.2891">printResults(): void
+        </text><!--class SecretCombinationView-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="73.9102" id="SecretCombinationView"
+              style="stroke: #A80036; stroke-width: 1.5;" width="240" x="66.3692" y="515.6992"/>
+        <ellipse cx="115.1192" cy="531.6992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M117.5923,537.8423 Q117.0113,538.1411 116.3721,538.2905 Q115.733,538.4399 115.0274,538.4399 Q112.5206,538.4399 111.2007,536.7881 Q109.8809,535.1362 109.8809,532.0151 Q109.8809,528.8857 111.2007,527.2339 Q112.5206,525.582 115.0274,525.582 Q115.733,525.582 116.3804,525.7314 Q117.0279,525.8809 117.5923,526.1797 L117.5923,528.9023 Q116.9615,528.3213 116.368,528.0515 Q115.7745,527.7817 115.1436,527.7817 Q113.7989,527.7817 113.1141,528.8484 Q112.4293,529.915 112.4293,532.0151 Q112.4293,534.1069 113.1141,535.1736 Q113.7989,536.2402 115.1436,536.2402 Q115.7745,536.2402 116.368,535.9705 Q116.9615,535.7007 117.5923,535.1196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="134"
+              x="135.6192" y="536.2344">SecretCombinationView
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="67.3692" x2="305.3692" y1="547.6992" y2="547.6992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="67.3692" x2="305.3692" y1="555.6992" y2="555.6992"/>
+        <ellipse cx="77.3692" cy="567.6768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="214"
+              x="86.3692" y="570.334">SecretCombinationView(StartController)
+        </text>
+        <ellipse cx="77.3692" cy="580.6318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78"
+              x="86.3692" y="583.2891">interact(): void
+        </text><!--class Controller-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="60.9551" id="Controller"
+              style="stroke: #A80036; stroke-width: 1.5;" width="119" x="1110.8692" y="355.6992"/>
+        <ellipse cx="1139.8192" cy="371.6992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1142.2923,377.8423 Q1141.7113,378.1411 1141.0721,378.2905 Q1140.433,378.4399 1139.7274,378.4399 Q1137.2206,378.4399 1135.9007,376.7881 Q1134.5809,375.1362 1134.5809,372.0151 Q1134.5809,368.8857 1135.9007,367.2339 Q1137.2206,365.582 1139.7274,365.582 Q1140.433,365.582 1141.0804,365.7314 Q1141.7279,365.8809 1142.2923,366.1797 L1142.2923,368.9023 Q1141.6615,368.3213 1141.068,368.0515 Q1140.4745,367.7817 1139.8436,367.7817 Q1138.4989,367.7817 1137.8141,368.8484 Q1137.1293,369.915 1137.1293,372.0151 Q1137.1293,374.1069 1137.8141,375.1736 Q1138.4989,376.2402 1139.8436,376.2402 Q1140.4745,376.2402 1141.068,375.9705 Q1141.6615,375.7007 1142.2923,375.1196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56"
+              x="1156.9192" y="376.2344">Controller
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1111.8692" x2="1228.8692" y1="387.6992" y2="387.6992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1111.8692" x2="1228.8692" y1="395.6992" y2="395.6992"/>
+        <ellipse cx="1121.8692" cy="407.6768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93"
+              x="1130.8692" y="410.334">Controller(Game)
+        </text><!--class StartController-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="73.9102" id="StartController"
+              style="stroke: #A80036; stroke-width: 1.5;" width="144" x="28.3692" y="727.6992"/>
+        <ellipse cx="56.8692" cy="743.6992" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M59.3423,749.8423 Q58.7613,750.1411 58.1221,750.2905 Q57.483,750.4399 56.7774,750.4399 Q54.2706,750.4399 52.9507,748.7881 Q51.6309,747.1362 51.6309,744.0151 Q51.6309,740.8857 52.9507,739.2339 Q54.2706,737.582 56.7774,737.582 Q57.483,737.582 58.1304,737.7314 Q58.7779,737.8809 59.3423,738.1797 L59.3423,740.9023 Q58.7115,740.3213 58.118,740.0515 Q57.5245,739.7817 56.8936,739.7817 Q55.5489,739.7817 54.8641,740.8484 Q54.1793,741.915 54.1793,744.0151 Q54.1793,746.1069 54.8641,747.1736 Q55.5489,748.2402 56.8936,748.2402 Q57.5245,748.2402 58.118,747.9705 Q58.7115,747.7007 59.3423,747.1196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82"
+              x="73.8692" y="748.2344">StartController
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="29.3692" x2="171.3692" y1="759.6992" y2="759.6992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="29.3692" x2="171.3692" y1="767.6992" y2="767.6992"/>
+        <ellipse cx="39.3692" cy="779.6768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="118"
+              x="48.3692" y="782.334">StartController(Game)
+        </text>
+        <ellipse cx="39.3692" cy="792.6318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82"
+              x="48.3692" y="795.2891">getLength(): int
+        </text><!--class ProposalController-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="112.7754" id="ProposalController"
+              style="stroke: #A80036; stroke-width: 1.5;" width="323" x="662.8692" y="708.1992"/>
+        <ellipse cx="767.1192" cy="724.1992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M769.5923,730.3423 Q769.0113,730.6411 768.3721,730.7905 Q767.733,730.9399 767.0274,730.9399 Q764.5206,730.9399 763.2007,729.2881 Q761.8809,727.6362 761.8809,724.5151 Q761.8809,721.3857 763.2007,719.7339 Q764.5206,718.082 767.0274,718.082 Q767.733,718.082 768.3804,718.2314 Q769.0279,718.3809 769.5923,718.6797 L769.5923,721.4023 Q768.9615,720.8213 768.368,720.5515 Q767.7745,720.2817 767.1436,720.2817 Q765.7989,720.2817 765.1141,721.3484 Q764.4293,722.415 764.4293,724.5151 Q764.4293,726.6069 765.1141,727.6736 Q765.7989,728.7402 767.1436,728.7402 Q767.7745,728.7402 768.368,728.4705 Q768.9615,728.2007 769.5923,727.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="106"
+              x="787.6192" y="728.7344">ProposalController
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="663.8692" x2="984.8692" y1="740.1992" y2="740.1992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="663.8692" x2="984.8692" y1="748.1992" y2="748.1992"/>
+        <ellipse cx="673.8692" cy="760.1768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140"
+              x="682.8692" y="762.834">ProposalController(Game)
+        </text>
+        <ellipse cx="673.8692" cy="773.1318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="297"
+              x="682.8692" y="775.7891">addProposedCombination(ProposedCombination): void
+        </text>
+        <ellipse cx="673.8692" cy="786.0869" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111"
+              x="682.8692" y="788.7441">isFinished(): boolean
+        </text>
+        <ellipse cx="673.8692" cy="799.042" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="682.8692" y="801.6992">isWinner(): boolean
+        </text>
+        <ellipse cx="673.8692" cy="811.9971" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170"
+              x="682.8692" y="814.6543">getResults(): ArrayList&lt;Result&gt;
+        </text><!--class RetryController-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="73.9102" id="RetryController"
+              style="stroke: #A80036; stroke-width: 1.5;" width="147" x="955.8692" y="515.6992"/>
+        <ellipse cx="983.9192" cy="531.6992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M986.3923,537.8423 Q985.8113,538.1411 985.1721,538.2905 Q984.533,538.4399 983.8274,538.4399 Q981.3206,538.4399 980.0007,536.7881 Q978.6809,535.1362 978.6809,532.0151 Q978.6809,528.8857 980.0007,527.2339 Q981.3206,525.582 983.8274,525.582 Q984.533,525.582 985.1804,525.7314 Q985.8279,525.8809 986.3923,526.1797 L986.3923,528.9023 Q985.7615,528.3213 985.168,528.0515 Q984.5745,527.7817 983.9436,527.7817 Q982.5989,527.7817 981.9141,528.8484 Q981.2293,529.915 981.2293,532.0151 Q981.2293,534.1069 981.9141,535.1736 Q982.5989,536.2402 983.9436,536.2402 Q984.5745,536.2402 985.168,535.9705 Q985.7615,535.7007 986.3923,535.1196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="86"
+              x="1000.8192" y="536.2344">RetryController
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="956.8692" x2="1101.8692" y1="547.6992" y2="547.6992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="956.8692" x2="1101.8692" y1="555.6992" y2="555.6992"/>
+        <ellipse cx="966.8692" cy="567.6768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121"
+              x="975.8692" y="570.334">RetryController(Game)
+        </text>
+        <ellipse cx="966.8692" cy="580.6318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63"
+              x="975.8692" y="583.2891">retry(): void
+        </text><!--class Game-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="138.6855" id="Game"
+              style="stroke: #A80036; stroke-width: 1.5;" width="323" x="1351.8692" y="483.1992"/>
+        <ellipse cx="1492.1192" cy="499.1992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1494.5923,505.3423 Q1494.0113,505.6411 1493.3721,505.7905 Q1492.733,505.9399 1492.0274,505.9399 Q1489.5206,505.9399 1488.2007,504.2881 Q1486.8809,502.6362 1486.8809,499.5151 Q1486.8809,496.3857 1488.2007,494.7339 Q1489.5206,493.082 1492.0274,493.082 Q1492.733,493.082 1493.3804,493.2314 Q1494.0279,493.3809 1494.5923,493.6797 L1494.5923,496.4023 Q1493.9615,495.8213 1493.368,495.5515 Q1492.7745,495.2817 1492.1436,495.2817 Q1490.7989,495.2817 1490.1141,496.3484 Q1489.4293,497.415 1489.4293,499.5151 Q1489.4293,501.6069 1490.1141,502.6736 Q1490.7989,503.7402 1492.1436,503.7402 Q1492.7745,503.7402 1493.368,503.4705 Q1493.9615,503.2007 1494.5923,502.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="34"
+              x="1512.6192" y="503.7344">Game
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1352.8692" x2="1673.8692" y1="515.1992" y2="515.1992"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1359.8692" y="524.1768"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="76"
+              x="1371.8692" y="529.834">ATTEMPTS: int
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1352.8692" x2="1673.8692" y1="536.1543" y2="536.1543"/>
+        <ellipse cx="1362.8692" cy="548.1318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38"
+              x="1371.8692" y="550.7891">Game()
+        </text>
+        <ellipse cx="1362.8692" cy="561.0869" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="297"
+              x="1371.8692" y="563.7441">addProposedCombination(ProposedCombination): void
+        </text>
+        <ellipse cx="1362.8692" cy="574.042" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111"
+              x="1371.8692" y="576.6992">isFinished(): boolean
+        </text>
+        <ellipse cx="1362.8692" cy="586.9971" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="1371.8692" y="589.6543">isWinner(): boolean
+        </text>
+        <ellipse cx="1362.8692" cy="599.9521" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170"
+              x="1371.8692" y="602.6094">getResults(): ArrayList&lt;Result&gt;
+        </text>
+        <ellipse cx="1362.8692" cy="612.9072" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63"
+              x="1371.8692" y="615.5645">clear(): void
+        </text><!--class Combination-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="86.8652" id="Combination"
+              style="stroke: #A80036; stroke-width: 1.5;" width="108" x="1839.3692" y="509.1992"/>
+        <ellipse cx="1856.1692" cy="525.1992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1858.6423,531.3423 Q1858.0613,531.6411 1857.4221,531.7905 Q1856.783,531.9399 1856.0774,531.9399 Q1853.5706,531.9399 1852.2507,530.2881 Q1850.9309,528.6362 1850.9309,525.5151 Q1850.9309,522.3857 1852.2507,520.7339 Q1853.5706,519.082 1856.0774,519.082 Q1856.783,519.082 1857.4304,519.2314 Q1858.0779,519.3809 1858.6423,519.6797 L1858.6423,522.4023 Q1858.0115,521.8213 1857.418,521.5515 Q1856.8245,521.2817 1856.1936,521.2817 Q1854.8489,521.2817 1854.1641,522.3484 Q1853.4793,523.415 1853.4793,525.5151 Q1853.4793,527.6069 1854.1641,528.6736 Q1854.8489,529.7402 1856.1936,529.7402 Q1856.8245,529.7402 1857.418,529.4705 Q1858.0115,529.2007 1858.6423,528.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="72"
+              x="1870.5692" y="529.7344">Combination
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1840.3692" x2="1946.3692" y1="541.1992" y2="541.1992"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1847.3692" y="550.1768"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63"
+              x="1859.3692" y="555.834">LENGTH: int
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1840.3692" x2="1946.3692" y1="562.1543" y2="562.1543"/>
+        <ellipse cx="1850.3692" cy="574.1318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77"
+              x="1859.3692" y="576.7891">Combination()
+        </text>
+        <ellipse cx="1850.3692" cy="587.0869" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82"
+              x="1859.3692" y="589.7441">getLength(): int
+        </text><!--class ProposedCombination-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="112.7754" id="ProposedCombination"
+              style="stroke: #A80036; stroke-width: 1.5;" width="190" x="1418.3692" y="907.1992"/>
+        <ellipse cx="1447.3192" cy="923.1992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1449.7923,929.3423 Q1449.2113,929.6411 1448.5721,929.7905 Q1447.933,929.9399 1447.2274,929.9399 Q1444.7206,929.9399 1443.4007,928.2881 Q1442.0809,926.6362 1442.0809,923.5151 Q1442.0809,920.3857 1443.4007,918.7339 Q1444.7206,917.082 1447.2274,917.082 Q1447.933,917.082 1448.5804,917.2314 Q1449.2279,917.3809 1449.7923,917.6797 L1449.7923,920.4023 Q1449.1615,919.8213 1448.568,919.5515 Q1447.9745,919.2817 1447.3436,919.2817 Q1445.9989,919.2817 1445.3141,920.3484 Q1444.6293,921.415 1444.6293,923.5151 Q1444.6293,925.6069 1445.3141,926.6736 Q1445.9989,927.7402 1447.3436,927.7402 Q1447.9745,927.7402 1448.568,927.4705 Q1449.1615,927.2007 1449.7923,926.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="127"
+              x="1464.4192" y="927.7344">ProposedCombination
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1419.3692" x2="1607.3692" y1="939.1992" y2="939.1992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1419.3692" x2="1607.3692" y1="947.1992" y2="947.1992"/>
+        <ellipse cx="1429.3692" cy="959.1768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="160"
+              x="1438.3692" y="961.834">ProposedCombination(String)
+        </text>
+        <ellipse cx="1429.3692" cy="972.1318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88"
+              x="1438.3692" y="974.7891">check(): boolean
+        </text>
+        <ellipse cx="1429.3692" cy="985.0869" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="150"
+              x="1438.3692" y="987.7441">contains(Color,int): boolean
+        </text>
+        <ellipse cx="1429.3692" cy="998.042" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133"
+              x="1438.3692" y="1000.6992">contains(Color): boolean
+        </text>
+        <ellipse cx="1429.3692" cy="1010.9971" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="164"
+              x="1438.3692" y="1013.6543">getColors(): ArrayList&lt;Color&gt;
+        </text><!--class SecretCombination-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="73.9102" id="SecretCombination"
+              style="stroke: #A80036; stroke-width: 1.5;" width="243" x="1566.8692" y="727.6992"/>
+        <ellipse cx="1630.6192" cy="743.6992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1633.0923,749.8423 Q1632.5113,750.1411 1631.8721,750.2905 Q1631.233,750.4399 1630.5274,750.4399 Q1628.0206,750.4399 1626.7007,748.7881 Q1625.3809,747.1362 1625.3809,744.0151 Q1625.3809,740.8857 1626.7007,739.2339 Q1628.0206,737.582 1630.5274,737.582 Q1631.233,737.582 1631.8804,737.7314 Q1632.5279,737.8809 1633.0923,738.1797 L1633.0923,740.9023 Q1632.4615,740.3213 1631.868,740.0515 Q1631.2745,739.7817 1630.6436,739.7817 Q1629.2989,739.7817 1628.6141,740.8484 Q1627.9293,741.915 1627.9293,744.0151 Q1627.9293,746.1069 1628.6141,747.1736 Q1629.2989,748.2402 1630.6436,748.2402 Q1631.2745,748.2402 1631.868,747.9705 Q1632.4615,747.7007 1633.0923,747.1196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="107"
+              x="1651.1192" y="748.2344">SecretCombination
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1567.8692" x2="1808.8692" y1="759.6992" y2="759.6992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1567.8692" x2="1808.8692" y1="767.6992" y2="767.6992"/>
+        <ellipse cx="1577.8692" cy="779.6768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110"
+              x="1586.8692" y="782.334">SecretCombination()
+        </text>
+        <ellipse cx="1577.8692" cy="792.6318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="217"
+              x="1586.8692" y="795.2891">getResult(ProposedCombination): Result
+        </text><!--class Color-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="164.5957" id="Color"
+              style="stroke: #A80036; stroke-width: 1.5;" width="96" x="1845.3692" y="682.1992"/>
+        <ellipse cx="1875.6692" cy="698.1992" fill="#EB937F" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1879.2835,704.6992 L1871.5637,704.6992 L1871.5637,692.3062 L1879.2835,692.3062 L1879.2835,694.4644 L1874.0125,694.4644 L1874.0125,697.1372 L1878.7854,697.1372 L1878.7854,699.2954 L1874.0125,699.2954 L1874.0125,702.541 L1879.2835,702.541 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30"
+              x="1893.0692" y="702.7344">Color
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1846.3692" x2="1940.3692" y1="714.1992" y2="714.1992"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43"
+              x="1851.3692" y="728.834">R: Color
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42"
+              x="1851.3692" y="741.7891">B: Color
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43"
+              x="1851.3692" y="754.7441">Y: Color
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="44"
+              x="1851.3692" y="767.6992">G: Color
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45"
+              x="1851.3692" y="780.6543">O: Color
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42"
+              x="1851.3692" y="793.6094">P: Color
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66"
+              x="1851.3692" y="806.5645">color: String
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1846.3692" x2="1940.3692" y1="812.8848" y2="812.8848"/>
+        <ellipse cx="1856.3692" cy="824.8623" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70"
+              x="1865.3692" y="827.5195">Color(String)
+        </text>
+        <ellipse cx="1856.3692" cy="837.8174" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62"
+              x="1865.3692" y="840.4746">length(): int
+        </text><!--class Result-->
+        <rect fill="#FEFECE" filter="url(#f1nbzsa65j9ee6)" height="112.7754" id="Result"
+              style="stroke: #A80036; stroke-width: 1.5;" width="221" x="1238.8692" y="708.1992"/>
+        <ellipse cx="1327.6192" cy="724.1992" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1330.0923,730.3423 Q1329.5113,730.6411 1328.8721,730.7905 Q1328.233,730.9399 1327.5274,730.9399 Q1325.0206,730.9399 1323.7007,729.2881 Q1322.3809,727.6362 1322.3809,724.5151 Q1322.3809,721.3857 1323.7007,719.7339 Q1325.0206,718.082 1327.5274,718.082 Q1328.233,718.082 1328.8804,718.2314 Q1329.5279,718.3809 1330.0923,718.6797 L1330.0923,721.4023 Q1329.4615,720.8213 1328.868,720.5515 Q1328.2745,720.2817 1327.6436,720.2817 Q1326.2989,720.2817 1325.6141,721.3484 Q1324.9293,722.415 1324.9293,724.5151 Q1324.9293,726.6069 1325.6141,727.6736 Q1326.2989,728.7402 1327.6436,728.7402 Q1328.2745,728.7402 1328.868,728.4705 Q1329.4615,728.2007 1330.0923,727.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35"
+              x="1348.1192" y="728.7344">Result
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1239.8692" x2="1458.8692" y1="740.1992" y2="740.1992"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1246.8692" y="749.1768"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46"
+              x="1258.8692" y="754.834">dead: int
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1246.8692" y="762.1318"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="69"
+              x="1258.8692" y="767.7891">wounded: int
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1239.8692" x2="1458.8692" y1="774.1094" y2="774.1094"/>
+        <ellipse cx="1249.8692" cy="786.0869" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="195"
+              x="1258.8692" y="788.7441">Result(ProposedCombination,int,int)
+        </text>
+        <ellipse cx="1249.8692" cy="799.042" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89"
+              x="1258.8692" y="801.6992">toString(): String
+        </text>
+        <ellipse cx="1249.8692" cy="811.9971" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="1258.8692" y="814.6543">isWinner(): boolean
+        </text><!--link Mastermind to ProposalController-->
+        <path d="M1088.5971,124.8147 C1088.5971,124.8147 1216.2573,259.4881 1247.3692,349.1992 C1270.8063,416.7798 1243.5515,593.5385 1220.3692,622.1992 C1190.771,658.7921 1090.6771,694.6428 998.5349,721.2314 "
+              fill="none" id="Mastermind-ProposalController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="985.8869,724.8383,995.6388,726.2167,990.6952,723.4671,993.4448,718.5234,985.8869,724.8383"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="990.6952" x2="998.3886" y1="723.4671" y2="721.2731"/>
+        <polygon fill="#A80036"
+                 points="1079.8961,116.5507,1081.4919,123.583,1088.5971,124.8147,1087.0012,117.7824,1079.8961,116.5507"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="993.7494" y="720.2728">0..1
+        </text><!--link Mastermind to StartController-->
+        <path d="M952.8997,83.0243 C952.8997,83.0243 661.2782,129.3864 506.3692,176.1992 C313.5118,234.4798 233.6256,210.6363 87.3692,349.1992 C-3.0998,434.9093 -7.1855,501.38 23.3692,622.1992 C31.8373,655.6836 49.9044,689.8397 66.4104,716.3153 "
+              fill="none" id="Mastermind-StartController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="73.5994,727.5373,72.1128,717.8013,70.9023,723.3271,65.3765,722.1166,73.5994,727.5373"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="70.9023" x2="66.5869" y1="723.3271" y2="716.5909"/>
+        <polygon fill="#A80036"
+                 points="964.7768,81.3112,958.2672,78.2087,952.8997,83.0243,959.4093,86.1268,964.7768,81.3112"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="42.4512" y="716.9081">0..1
+        </text><!--link Mastermind to RetryController-->
+        <path d="M1029.3692,128.5685 C1029.3692,128.5685 1029.3692,412.372 1029.3692,502.41 " fill="none"
+              id="Mastermind-RetryController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1029.3692,515.4747,1033.3692,506.4747,1029.3692,510.4747,1025.3692,506.4747,1029.3692,515.4747"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1029.3692" x2="1029.3693" y1="510.4747" y2="502.4747"/>
+        <polygon fill="#A80036"
+                 points="1029.3692,116.5685,1025.3692,122.5685,1029.3692,128.5685,1033.3692,122.5685,1029.3692,116.5685"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="1003.1567" y="504.8339">0..1
+        </text><!--link Mastermind to GameView-->
+        <path d="M953.7999,109.7885 C953.7999,109.7885 871.7055,150.0802 830.3703,170.3674 " fill="none"
+              id="Mastermind-GameView" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="818.5219,176.1826,828.3636,175.8081,823.0104,173.9797,824.8389,168.6265,818.5219,176.1826"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="823.0104" x2="830.1921" y1="173.9797" y2="170.4548"/>
+        <polygon fill="#A80036"
+                 points="964.5723,104.5013,957.4237,103.5541,953.7999,109.7885,960.9485,110.7357,964.5723,104.5013"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="807.7383" y="165.5831">0..1
+        </text><!--link Mastermind to Game-->
+        <path d="M1105.7883,83.2069 C1105.7883,83.2069 1262.9881,122.2014 1324.3692,176.1992 C1413.6864,254.7727 1465.802,385.4855 1491.9333,470.3658 "
+              fill="none" id="Mastermind-Game" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1495.7537,483.0621,1496.9907,473.2913,1494.313,478.2742,1489.3301,475.5964,1495.7537,483.0621"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1494.313" x2="1492.0078" y1="478.2742" y2="470.6135"/>
+        <polygon fill="#A80036"
+                 points="1093.9865,81.0348,1099.1633,86.0548,1105.7883,83.2069,1100.6114,78.187,1093.9865,81.0348"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="1468.5145" y="472.2278">0..1
+        </text><!--link GameView to ProposalView-->
+        <path d="M650.8211,298.8151 C650.8211,298.8151 629.0889,326.1585 619.3685,338.3886 " fill="none"
+              id="GameView-ProposalView" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="611.0919,348.8023,619.8232,344.2455,614.2029,344.8881,613.5603,339.2678,611.0919,348.8023"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="614.2029" x2="619.1806" y1="344.8881" y2="338.6252"/>
+        <polygon fill="#A80036"
+                 points="658.2876,289.4208,651.4229,291.6291,650.8211,298.8151,657.6858,296.6068,658.2876,289.4208"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="590.2488" y="338.4091">0..1
+        </text><!--link GameView to StartView-->
+        <path d="M512.1325,289.4784 C512.1325,289.4784 344.8549,339.144 280.5437,358.2383 " fill="none"
+              id="GameView-StartView" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="268,361.9626,277.7663,363.2355,272.7932,360.5395,275.4892,355.5664,268,361.9626"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="272.7932" x2="280.4623" y1="360.5395" y2="358.2624"/>
+        <polygon fill="#A80036"
+                 points="523.6362,286.0629,516.7459,283.9361,512.1325,289.4784,519.0229,291.6052,523.6362,286.0629"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="275.7538" y="356.9194">0..1
+        </text><!--link GameView to RetryView-->
+        <path d="M759.1625,298.578 C759.1625,298.578 782.7494,326.4288 793.1917,338.7588 " fill="none"
+              id="GameView-RetryView" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="801.6975,348.8023,798.9333,339.3493,798.4661,344.9868,792.8286,344.5196,801.6975,348.8023"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="798.4661" x2="793.2959" y1="344.9868" y2="338.8819"/>
+        <polygon fill="#A80036"
+                 points="751.4071,289.4208,752.2324,296.5845,759.1625,298.578,758.3372,291.4143,751.4071,289.4208"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="769.9185" y="338.4091">0..1
+        </text><!--link Controller to Game-->
+        <path d="M1240.9106,420.4416 C1240.9106,420.4416 1317.5368,457.6377 1358.1675,477.3608 " fill="none"
+              id="Controller-Game" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1369.8705,483.0416,1363.5208,475.5129,1365.3725,480.8581,1360.0272,482.7098,1369.8705,483.0416"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1365.3725" x2="1358.1756" y1="480.8581" y2="477.3646"/>
+        <polygon fill="#A80036"
+                 points="1230.1153,415.2013,1233.7662,421.4199,1240.9106,420.4416,1237.2597,414.223,1230.1153,415.2013"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="1329.8347" y="472.6853">0..1
+        </text><!--link Controller to StartController-->
+        <path d="M1175.1947,436.9979 C1177.2726,491.1799 1171.1358,575.4865 1120.3692,622.1992 C1042.076,694.2404 750.7529,667.5694 645.3692,682.1992 C475.7006,705.7534 276.8487,736.7033 172.5767,753.1907 "
+              fill="none" id="Controller-StartController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1168.1953,437.2153,1173.9908,416.8337,1182.1704,436.3809,1168.1953,437.2153"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link Controller to ProposalController-->
+        <path d="M1189.1015,435.9678 C1204.9464,487.2231 1219.6934,567.1701 1182.3692,622.1992 C1138.1538,687.3884 1058.8732,722.7565 986.139,741.9449 "
+              fill="none" id="Controller-ProposalController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1182.4219,438.0648,1182.7381,416.8775,1195.7035,433.6376,1182.4219,438.0648"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link Controller to RetryController-->
+        <path d="M1131.4339,432.176 C1109.1657,458.4714 1081.603,491.0189 1060.7356,515.6602 " fill="none"
+              id="Controller-RetryController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1126.2407,427.4766,1144.5077,416.7379,1136.9245,436.5242,1126.2407,427.4766"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link ProposalView to ProposedCombinationView-->
+        <path d="M572.802,435.387 C572.802,435.387 564.7219,481.778 561.0896,502.6325 " fill="none"
+              id="ProposalView-ProposedCombinationView" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="558.8557,515.4581,564.3407,507.278,559.7137,510.5323,556.4594,505.9052,558.8557,515.4581"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="559.7137" x2="561.0865" y1="510.5323" y2="502.6509"/>
+        <polygon fill="#A80036"
+                 points="574.8611,423.565,569.8909,428.7896,572.802,435.387,577.7722,430.1624,574.8611,423.565"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="533.8736" y="505.0926">0..1
+        </text><!--link ProposalView to ResultView-->
+        <path d="M645.4998,430.1407 C645.4998,430.1407 724.4433,484.2314 759.2896,508.1076 " fill="none"
+              id="ProposalView-ResultView" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="770.3035,515.6542,765.1401,507.2674,766.1789,512.828,760.6182,513.8668,770.3035,515.6542"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="766.1789" x2="759.5794" y1="512.828" y2="508.3062"/>
+        <polygon fill="#A80036"
+                 points="635.6007,423.3578,638.2893,430.049,645.4998,430.1407,642.8112,423.4495,635.6007,423.3578"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="734.1226" y="505.0465">0..1
+        </text><!--link ProposalView to ProposalController-->
+        <path d="M477.8571,415.9883 C445.402,430.7424 413.1752,452.2588 394.3692,483.1992 C362.2821,535.9904 358.2034,572.114 394.3692,622.1992 C426.4338,666.6047 550.9042,704.8744 657.7322,730.5393 "
+              fill="none" id="ProposalView-ProposalController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="662.8055,731.7519,654.982,725.7692,657.9425,730.5895,653.1222,733.55,662.8055,731.7519"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="630.9409" y="727.4996">0..1
+        </text><!--link StartView to SecretCombinationView-->
+        <path d="M186.3692,435.565 C186.3692,435.565 186.3692,481.5489 186.3692,502.3357 " fill="none"
+              id="StartView-SecretCombinationView" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="186.3692,515.4581,190.3692,506.4581,186.3692,510.4581,182.3692,506.4581,186.3692,515.4581"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="186.3692" x2="186.3693" y1="510.4581" y2="502.4581"/>
+        <polygon fill="#A80036"
+                 points="186.3692,423.565,182.3692,429.565,186.3692,435.565,190.3692,429.565,186.3692,423.565"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="160.2317" y="505.0926">0..1
+        </text><!--link StartView to StartController-->
+        <path d="M107.2194,423.2712 C83.974,438.3729 61.328,458.2506 48.3692,483.1992 C7.9274,561.0585 47.9912,665.4006 76.7594,722.6749 "
+              fill="none" id="StartView-StartController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="79.1569,727.392,78.6451,717.5565,76.8915,722.9347,71.5133,721.1811,79.1569,727.392"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="77.516" y="717.0148">0..1
+        </text><!--link RetryView to RetryController-->
+        <path d="M877.3555,423.565 C908.3742,449.9151 949.8919,485.1841 981.7002,512.2049 " fill="none"
+              id="RetryView-RetryController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="985.5298,515.4581,981.2604,506.5827,981.7192,512.2209,976.081,512.6797,985.5298,515.4581"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="951.5834" y="505.0926">0..1
+        </text><!--link ProposedCombinationView to ProposalController-->
+        <path d="M600.0593,589.8694 C640.8867,621.6908 700.421,668.0925 747.8974,705.0961 " fill="none"
+              id="ProposedCombinationView-ProposalController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="751.8721,708.1941,747.2326,699.5065,747.9285,705.1204,742.3146,705.8163,751.8721,708.1941"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="717.0459" y="697.5961">0..1
+        </text><!--link ResultView to ProposalController-->
+        <path d="M824.3692,590.1125 C824.3692,621.2693 824.3692,666.2805 824.3692,702.7957 " fill="none"
+              id="ResultView-ProposalController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="824.3692,708.1188,828.3692,699.1188,824.3692,703.1188,820.3692,699.1188,824.3692,708.1188"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="798.8317" y="697.5112">0..1
+        </text><!--link SecretCombinationView to StartController-->
+        <path d="M171.1921,590.1125 C156.1477,627.1988 133.1403,683.9147 117.4608,722.5664 " fill="none"
+              id="SecretCombinationView-StartController" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="115.3946,727.6599,122.4844,720.8237,117.2742,723.0266,115.0712,717.8164,115.3946,727.6599"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="120.3774" y="717.0533">0..1
+        </text><!--link Game to ProposedCombination-->
+        <path d="M1513.3692,634.4197 C1513.3692,634.4197 1513.3692,822.1073 1513.3692,893.5858 " fill="none"
+              id="Game-ProposedCombination" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1513.3692,906.8954,1517.3692,897.8954,1513.3692,901.8954,1509.3692,897.8954,1513.3692,906.8954"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1513.3692" x2="1513.3693" y1="901.8954" y2="893.8954"/>
+        <polygon fill="#A80036"
+                 points="1513.3692,622.4197,1509.3692,628.4197,1513.3692,634.4197,1517.3692,628.4197,1513.3692,622.4197"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="32"
+              x="1479.3192" y="896.2591">0..10
+        </text><!--link Game to SecretCombination-->
+        <path d="M1578.5524,631.6639 C1578.5524,631.6639 1628.8196,692.5591 1649.3535,717.4344 " fill="none"
+              id="Game-SecretCombination" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1657.8135,727.6831,1655.1689,718.196,1654.6305,723.8272,1648.9993,723.2888,1657.8135,727.6831"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1654.6305" x2="1649.5377" y1="723.8272" y2="717.6576"/>
+        <polygon fill="#A80036"
+                 points="1570.9132,622.4096,1571.648,629.5832,1578.5524,631.6639,1577.8176,624.4904,1570.9132,622.4096"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="1643.4423" y="717.0807">1
+        </text><!--link Game to Result-->
+        <path d="M1452.0999,631.9011 C1452.0999,631.9011 1417.2028,677.0119 1401.3408,697.5165 " fill="none"
+              id="Game-Result" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1393.2197,708.0144,1401.8904,703.3433,1396.2791,704.0596,1395.5627,698.4483,1393.2197,708.0144"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1396.2791" x2="1401.1741" y1="704.0596" y2="697.732"/>
+        <polygon fill="#A80036"
+                 points="1459.4423,622.4096,1452.6072,624.7079,1452.0999,631.9011,1458.9349,629.6028,1459.4423,622.4096"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="32"
+              x="1364.788" y="697.3934">0..10
+        </text><!--link Result to ProposedCombination-->
+        <path d="M1403.7774,830.7188 C1403.7774,830.7188 1440.9365,875.8082 1458.2101,896.7683 " fill="none"
+              id="Result-ProposedCombination" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1466.5308,906.8647,1463.8939,897.3754,1463.3509,903.0062,1457.7202,902.4632,1466.5308,906.8647"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1463.3509" x2="1458.263" y1="903.0062" y2="896.8325"/>
+        <polygon fill="#A80036"
+                 points="1396.1456,821.4583,1396.8747,828.6325,1403.7774,830.7188,1403.0483,823.5446,1396.1456,821.4583"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24"
+              x="1435.3599" y="896.6249">0..1
+        </text><!--link Combination to Color-->
+        <path d="M1893.3692,608.3687 C1893.3692,608.3687 1893.3692,648.5081 1893.3692,668.8341 " fill="none"
+              id="Combination-Color" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="1893.3692,682.0871,1897.3692,673.0871,1893.3692,677.0871,1889.3692,673.0871,1893.3692,682.0871"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="1893.3692" x2="1893.3693" y1="677.0871" y2="669.0871"/>
+        <polygon fill="#A80036"
+                 points="1893.3692,596.3687,1889.3692,602.3687,1893.3692,608.3687,1897.3692,602.3687,1893.3692,596.3687"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="1885.0005" y="671.3812">4
+        </text><!--link Combination to SecretCombination-->
+        <path d="M1836.8911,611.1058 C1800.9502,648.274 1755.482,695.2947 1724.3805,727.4583 " fill="none"
+              id="Combination-SecretCombination" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1832.2067,605.8802,1851.1417,596.3687,1842.271,615.6122,1832.2067,605.8802"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link Combination to ProposedCombination-->
+        <path d="M1933.6598,613.9804 C1970.4076,678.3634 2011.6603,779.4947 1959.3692,847.1992 C1916.8412,902.263 1726.3382,936.271 1608.4879,952.4238 "
+              fill="none" id="Combination-ProposedCombination" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1927.4455,617.2253,1923.25,596.4551,1939.4822,610.0756,1927.4455,617.2253"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+title Diagrama de Clases v5.0
+
+class Mastermind {
+	+Mastermind()
+	+play(): void
+	+main(String[]): void
+}
+
+class GameView {
+	+GameView(StartController,ProposalController,RetryController)
+	+interact(): void
+	+start(): void
+	+propose(): boolean
+	+retry(): boolean
+}
+
+class StartView {
+	+StartView(StartController)
+	+interact(): void
+}
+
+class ProposalView {
+	+ProposalView(ProposalController)
+	+interact(): boolean
+}
+
+
+class RetryView {
+	+RetryView(RetryController)
+	+interact(): boolean
+}
+
+class ProposedCombinationView {
+	+ProposedCombinationView(ProposalController)
+	+read(): ProposedCombination
+}
+
+class ResultView {
+	+ResultView(ProposalController)
+	+printResults(): void
+}
+
+class SecretCombinationView {
+	+SecretCombinationView(StartController)
+	+interact(): void
+}
+
+class Controller {
+	+Controller(Game)
+}
+
+class StartController {
+	+StartController(Game)
+	+getLength(): int
+}
+
+class ProposalController {
+	+ProposalController(Game)
+	+addProposedCombination(ProposedCombination): void
+	+isFinished(): boolean
+	+isWinner(): boolean
+	+getResults(): ArrayList<Result>
+}
+
+class RetryController {
+	+RetryController(Game)
+	+retry(): void
+}
+
+class Game {
+	-ATTEMPTS: int
+	+Game()
+	+addProposedCombination(ProposedCombination): void
+	+isFinished(): boolean
+	+isWinner(): boolean
+	+getResults(): ArrayList<Result>
+	+clear(): void
+}
+
+class Combination {
+	-LENGTH: int
+	+Combination()
+	+getLength(): int
+}
+
+class ProposedCombination {
+	+ProposedCombination(String)
+	+check(): boolean
+	+contains(Color,int): boolean
+	+contains(Color): boolean
+	+getColors(): ArrayList<Color>
+}
+
+class SecretCombination {
+	+SecretCombination()
+	+getResult(ProposedCombination): Result
+}
+
+enum Color {
+	R: Color
+	B: Color
+	Y: Color
+	G: Color
+	O: Color
+	P: Color
+	color: String
+	+Color(String)
+	+length(): int
+}
+
+class Result {
+	-dead: int
+	-wounded: int
+	+Result(ProposedCombination,int,int)
+	+toString(): String
+	+isWinner(): boolean
+}
+
+Mastermind *- -> "0..1" ProposalController
+Mastermind *- -> "0..1" StartController
+Mastermind *- -> "0..1" RetryController
+Mastermind *- -> "0..1" GameView
+Mastermind *- -> "0..1" Game
+
+GameView *- -> "0..1" ProposalView
+GameView *- -> "0..1" StartView
+GameView *- -> "0..1" RetryView
+
+Controller *- -> "0..1" Game
+Controller <|- - StartController
+Controller <|- - ProposalController
+Controller <|- - RetryController
+
+ProposalView *- -> "0..1" ProposedCombinationView
+ProposalView *- -> "0..1" ResultView
+ProposalView - -> "0..1" ProposalController
+
+StartView *- -> "0..1" SecretCombinationView
+StartView - -> "0..1" StartController
+
+RetryView - -> "0..1" RetryController
+
+ProposedCombinationView - -> "0..1" ProposalController
+
+ResultView - -> "0..1" ProposalController
+
+SecretCombinationView - -> "0..1" StartController
+
+Game *- -> "0..10" ProposedCombination
+Game *- -> "1" SecretCombination
+Game *- -> "0..10" Result
+
+Result *- -> "0..1" ProposedCombination
+
+Combination *- -> "4" Color
+Combination <|- - SecretCombination
+Combination <|- - ProposedCombination
+@enduml
+
+PlantUML version 1.2019.06(Fri May 24 19:10:25 CEST 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+12-b304.56
+Operating System: Mac OS X
+OS Version: 10.14.6
+Default Encoding: UTF-8
+Language: es
+Country: ES
+-->
+    </g>
+</svg>

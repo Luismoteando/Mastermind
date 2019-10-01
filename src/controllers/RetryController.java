@@ -4,11 +4,11 @@ import models.Game;
 
 public class RetryController extends Controller {
 
-	public RetryController(Game game) {
-		super(game);
-	}
+    public RetryController(Game game) {
+        super(game);
+    }
 
-	public void retry() {
-		this.game.clear();
-	}
+    public void retry() {
+        this.game.clear();
+    }
 }

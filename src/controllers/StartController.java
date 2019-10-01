@@ -5,11 +5,11 @@ import models.Game;
 
 public class StartController extends Controller {
 
-	public StartController(Game game) {
-		super(game);
-	}
+    public StartController(Game game) {
+        super(game);
+    }
 
-	public int getLength() {
-		return Combination.getLength();
-	}
+    public int getLength() {
+        return Combination.getLength();
+    }
 }

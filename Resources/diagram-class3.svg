@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="486px" preserveAspectRatio="none"
+     style="width:600px;height:486px;" version="1.1" viewBox="0 0 600 486" width="600px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="fixfq7579uae6" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="220"
+              x="193.5" y="17.4023">Diagrama de Clases v3.0
+        </text><!--class Mastermind-->
+        <rect fill="#FEFECE" filter="url(#fixfq7579uae6)" height="125.7305" id="Mastermind"
+              style="stroke: #A80036; stroke-width: 1.5;" width="346" x="6" y="29.1992"/>
+        <ellipse cx="140.75" cy="45.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M143.2231,51.3423 Q142.6421,51.6411 142.0029,51.7905 Q141.3638,51.9399 140.6582,51.9399 Q138.1514,51.9399 136.8315,50.2881 Q135.5117,48.6362 135.5117,45.5151 Q135.5117,42.3857 136.8315,40.7339 Q138.1514,39.082 140.6582,39.082 Q141.3638,39.082 142.0112,39.2314 Q142.6587,39.3809 143.2231,39.6797 L143.2231,42.4023 Q142.5923,41.8213 141.9988,41.5515 Q141.4053,41.2817 140.7744,41.2817 Q139.4297,41.2817 138.7449,42.3484 Q138.0601,43.415 138.0601,45.5151 Q138.0601,47.6069 138.7449,48.6736 Q139.4297,49.7402 140.7744,49.7402 Q141.4053,49.7402 141.9988,49.4705 Q142.5923,49.2007 143.2231,48.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="68"
+              x="161.25" y="49.7344">Mastermind
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="351" y1="61.1992" y2="61.1992"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="70.1768"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="210"
+              x="26" y="75.834">secretCombination: SecretCombination
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="83.1318"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="320"
+              x="26" y="88.7891">proposedCombinations: ArrayList&lt;ProposedCombination&gt;
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="96.0869"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="143"
+              x="26" y="101.7441">results: ArrayList&lt;Result&gt;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="351" y1="108.0645" y2="108.0645"/>
+        <ellipse cx="17" cy="120.042" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="26" y="122.6992">Mastermind()
+        </text>
+        <ellipse cx="17" cy="132.9971" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="26" y="135.6543">main(String[]): void
+        </text>
+        <ellipse cx="17" cy="145.9521" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59"
+              x="26" y="148.6094">play(): void
+        </text><!--class Combination-->
+        <rect fill="#FEFECE" filter="url(#fixfq7579uae6)" height="73.9102" id="Combination"
+              style="stroke: #A80036; stroke-width: 1.5;" width="163" x="392.5" y="55.1992"/>
+        <ellipse cx="434.05" cy="71.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M436.5231,77.3423 Q435.9421,77.6411 435.3029,77.7905 Q434.6638,77.9399 433.9582,77.9399 Q431.4514,77.9399 430.1315,76.2881 Q428.8117,74.6362 428.8117,71.5151 Q428.8117,68.3857 430.1315,66.7339 Q431.4514,65.082 433.9582,65.082 Q434.6638,65.082 435.3112,65.2314 Q435.9587,65.3809 436.5231,65.6797 L436.5231,68.4023 Q435.8923,67.8213 435.2988,67.5515 Q434.7053,67.2817 434.0744,67.2817 Q432.7297,67.2817 432.0449,68.3484 Q431.3601,69.415 431.3601,71.5151 Q431.3601,73.6069 432.0449,74.6736 Q432.7297,75.7402 434.0744,75.7402 Q434.7053,75.7402 435.2988,75.4705 Q435.8923,75.2007 436.5231,74.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="72"
+              x="453.95" y="75.7344">Combination
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="393.5" x2="554.5" y1="87.1992" y2="87.1992"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="400.5" y="96.1768"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="137"
+              x="412.5" y="101.834">colors: ArrayList&lt;Color&gt;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="393.5" x2="554.5" y1="108.1543" y2="108.1543"/>
+        <ellipse cx="403.5" cy="120.1318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77"
+              x="412.5" y="122.7891">Combination()
+        </text><!--class ProposedCombination-->
+        <rect fill="#FEFECE" filter="url(#fixfq7579uae6)" height="86.8652" id="ProposedCombination"
+              style="stroke: #A80036; stroke-width: 1.5;" width="159" x="261.5" y="234.6992"/>
+        <ellipse cx="276.5" cy="250.6992" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M278.9731,256.8423 Q278.3921,257.1411 277.7529,257.2905 Q277.1138,257.4399 276.4082,257.4399 Q273.9014,257.4399 272.5815,255.7881 Q271.2617,254.1362 271.2617,251.0151 Q271.2617,247.8857 272.5815,246.2339 Q273.9014,244.582 276.4082,244.582 Q277.1138,244.582 277.7612,244.7314 Q278.4087,244.8809 278.9731,245.1797 L278.9731,247.9023 Q278.3423,247.3213 277.7488,247.0515 Q277.1553,246.7817 276.5244,246.7817 Q275.1797,246.7817 274.4949,247.8484 Q273.8101,248.915 273.8101,251.0151 Q273.8101,253.1069 274.4949,254.1736 Q275.1797,255.2402 276.5244,255.2402 Q277.1553,255.2402 277.7488,254.9705 Q278.3423,254.7007 278.9731,254.1196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="127"
+              x="290.5" y="255.2344">ProposedCombination
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="262.5" x2="419.5" y1="266.6992" y2="266.6992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="262.5" x2="419.5" y1="274.6992" y2="274.6992"/>
+        <ellipse cx="272.5" cy="286.6768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128"
+              x="281.5" y="289.334">ProposedCombination()
+        </text>
+        <ellipse cx="272.5" cy="299.6318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="61"
+              x="281.5" y="302.2891">read(): void
+        </text>
+        <ellipse cx="272.5" cy="312.5869" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68"
+              x="281.5" y="315.2441">check(): void
+        </text><!--class SecretCombination-->
+        <rect fill="#FEFECE" filter="url(#fixfq7579uae6)" height="73.9102" id="SecretCombination"
+              style="stroke: #A80036; stroke-width: 1.5;" width="139" x="190.5" y="401.1992"/>
+        <ellipse cx="205.5" cy="417.1992" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M207.9731,423.3423 Q207.3921,423.6411 206.7529,423.7905 Q206.1138,423.9399 205.4082,423.9399 Q202.9014,423.9399 201.5815,422.2881 Q200.2617,420.6362 200.2617,417.5151 Q200.2617,414.3857 201.5815,412.7339 Q202.9014,411.082 205.4082,411.082 Q206.1138,411.082 206.7612,411.2314 Q207.4087,411.3809 207.9731,411.6797 L207.9731,414.4023 Q207.3423,413.8213 206.7488,413.5515 Q206.1553,413.2817 205.5244,413.2817 Q204.1797,413.2817 203.4949,414.3484 Q202.8101,415.415 202.8101,417.5151 Q202.8101,419.6069 203.4949,420.6736 Q204.1797,421.7402 205.5244,421.7402 Q206.1553,421.7402 206.7488,421.4705 Q207.3423,421.2007 207.9731,420.6196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="107"
+              x="219.5" y="421.7344">SecretCombination
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="191.5" x2="328.5" y1="433.1992" y2="433.1992"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="191.5" x2="328.5" y1="441.1992" y2="441.1992"/>
+        <ellipse cx="201.5" cy="453.1768" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110"
+              x="210.5" y="455.834">SecretCombination()
+        </text>
+        <ellipse cx="201.5" cy="466.1318" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87"
+              x="210.5" y="468.7891">getResult(): void
+        </text><!--class Result-->
+        <rect fill="#FEFECE" filter="url(#fixfq7579uae6)" height="86.8652" id="Result"
+              style="stroke: #A80036; stroke-width: 1.5;" width="95" x="131.5" y="234.6992"/>
+        <ellipse cx="159.1" cy="250.6992" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M161.5731,256.8423 Q160.9921,257.1411 160.3529,257.2905 Q159.7138,257.4399 159.0082,257.4399 Q156.5014,257.4399 155.1815,255.7881 Q153.8617,254.1362 153.8617,251.0151 Q153.8617,247.8857 155.1815,246.2339 Q156.5014,244.582 159.0082,244.582 Q159.7138,244.582 160.3612,244.7314 Q161.0087,244.8809 161.5731,245.1797 L161.5731,247.9023 Q160.9423,247.3213 160.3488,247.0515 Q159.7553,246.7817 159.1244,246.7817 Q157.7797,246.7817 157.0949,247.8484 Q156.4101,248.915 156.4101,251.0151 Q156.4101,253.1069 157.0949,254.1736 Q157.7797,255.2402 159.1244,255.2402 Q159.7553,255.2402 160.3488,254.9705 Q160.9423,254.7007 161.5731,254.1196 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35"
+              x="175.9" y="255.2344">Result
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="132.5" x2="225.5" y1="266.6992" y2="266.6992"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="139.5" y="275.6768"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46"
+              x="151.5" y="281.334">dead: int
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="139.5" y="288.6318"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="69"
+              x="151.5" y="294.2891">wounded: int
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="132.5" x2="225.5" y1="300.6094" y2="300.6094"/>
+        <ellipse cx="142.5" cy="312.5869" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63"
+              x="151.5" y="315.2441">print(): void
+        </text><!--class Color-->
+        <rect fill="#FEFECE" filter="url(#fixfq7579uae6)" height="125.7305" id="Color"
+              style="stroke: #A80036; stroke-width: 1.5;" width="62" x="527" y="215.1992"/>
+        <ellipse cx="542" cy="231.1992" fill="#EB937F" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M545.6143,237.6992 L537.8945,237.6992 L537.8945,225.3062 L545.6143,225.3062 L545.6143,227.4644 L540.3433,227.4644 L540.3433,230.1372 L545.1162,230.1372 L545.1162,232.2954 L540.3433,232.2954 L540.3433,235.541 L545.6143,235.541 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30"
+              x="556" y="235.7344">Color
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="528" x2="588" y1="247.1992" y2="247.1992"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="5"
+              x="533" y="261.834">r
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="7"
+              x="533" y="274.7891">b
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="6"
+              x="533" y="287.7441">y
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="7"
+              x="533" y="300.6992">g
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="7"
+              x="533" y="313.6543">o
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="7"
+              x="533" y="326.6094">p
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="528" x2="588" y1="332.9297"
+              y2="332.9297"/><!--link Mastermind to ProposedCombination-->
+        <path d="M241.9533,164.4789 C241.9533,164.4789 278.1664,206.0569 294.2425,224.5147 " fill="none"
+              id="Mastermind-ProposedCombination" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="302.9258,234.4844,300.0311,225.0706,299.6419,230.714,293.9984,230.3248,302.9258,234.4844"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="299.6419" x2="294.3877" y1="230.714" y2="224.6814"/>
+        <polygon fill="#A80036"
+                 points="234.0719,155.4299,234.9963,162.5815,241.9533,164.4789,241.0289,157.3273,234.0719,155.4299"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="32"
+              x="262.3077" y="223.9259">0..10
+        </text><!--link Mastermind to SecretCombination-->
+        <path d="M132.5259,165.9618 C132.5259,165.9618 84.7664,286.6794 114,341.1992 C128.2165,367.7126 153.2256,388.214 178.5717,403.3928 "
+              fill="none" id="Mastermind-SecretCombination" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="190.2033,409.9948,184.3506,402.0736,185.8549,407.5267,180.4017,409.031,190.2033,409.9948"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="185.8549" x2="178.8975" y1="407.5267" y2="403.5777"/>
+        <polygon fill="#A80036"
+                 points="138.0814,155.3252,131.7581,158.7917,132.5259,165.9618,138.8492,162.4953,138.0814,155.3252"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="174.593" y="403.9018">1
+        </text><!--link Mastermind to Result-->
+        <path d="M179,167.4299 C179,167.4299 179,204.4306 179,221.0251 " fill="none" id="Mastermind-Result"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="179,234.4844,183,225.4844,179,229.4844,175,225.4844,179,234.4844"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="179" x2="179.0001" y1="229.4844" y2="221.4845"/>
+        <polygon fill="#A80036" points="179,155.4299,175,161.4299,179,167.4299,183,161.4299,179,155.4299"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="32"
+              x="144.45" y="223.9259">0..10
+        </text><!--link Combination to Color-->
+        <path d="M495.7359,140.3284 C495.7359,140.3284 514.6767,182.269 524.0475,203.0187 " fill="none"
+              id="Combination-Color" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="529.4859,215.0608,529.4272,205.2121,527.428,210.504,522.1362,208.5048,529.4859,215.0608"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="527.428" x2="524.1353" y1="210.504" y2="203.213"/>
+        <polygon fill="#A80036"
+                 points="490.7968,129.392,489.6209,136.5066,495.7359,140.3284,496.9118,133.2139,490.7968,129.392"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="517.7265" y="204.4951">4
+        </text><!--link Combination to SecretCombination-->
+        <path d="M479.5548,149.2534 C481.859,203.4042 477.3012,284.6931 438,341.1992 C412.2782,378.1813 367.7782,402.4313 329.7087,417.4358 "
+              fill="none" id="Combination-SecretCombination" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="472.565,149.6325,478.3397,129.245,486.5393,148.7838,472.565,149.6325"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link Combination to ProposedCombination-->
+        <path d="M435.5155,146.0196 C415.4159,174.1288 391.1378,208.0817 372.2207,234.5372 " fill="none"
+              id="Combination-ProposedCombination" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="430.078,141.5892,447.4051,129.392,441.4661,149.7324,430.078,141.5892"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link ProposedCombination to SecretCombination-->
+        <path d="M316.4792,326.6353 C304.3845,350.5262 290.0253,378.89 278.8121,401.0395 " fill="none"
+              id="ProposedCombination-SecretCombination"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="#A80036"
+                 points="318.8664,321.9199,311.2325,328.1428,316.608,326.3808,318.3699,331.7563,318.8664,321.9199"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--link Result to SecretCombination-->
+        <path d="M203.5208,326.6353 C215.6155,350.5262 229.9747,378.89 241.1879,401.0395 " fill="none"
+              id="Result-SecretCombination" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="#A80036"
+                 points="201.1336,321.9199,201.6301,331.7563,203.392,326.3808,208.7675,328.1428,201.1336,321.9199"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+title Diagrama de Clases  v3.0
+
+class Mastermind {
+	-secretCombination: SecretCombination
+	-proposedCombinations: ArrayList<ProposedCombination>
+	-results: ArrayList<Result>
+	+Mastermind()
+	+main(String[]): void
+	+play(): void
+}
+
+class Combination {
+	-colors: ArrayList<Color>
+    +Combination()
+}
+
+class ProposedCombination {
+    +ProposedCombination()
+	+read(): void
+	+check(): void
+}
+
+class SecretCombination {
+    +SecretCombination()
+	+getResult(): void
+}
+
+class Result {
+	-dead: int
+	-wounded: int
+	+print(): void
+}
+
+enum Color {
+	r
+	b
+	y
+	g
+	o
+	p
+}
+
+Mastermind *- -> "0..10" ProposedCombination
+Mastermind *- -> "1" SecretCombination
+Mastermind *- -> "0..10" Result
+Combination *- -> "4" Color
+Combination <|- - SecretCombination
+Combination <|- - ProposedCombination
+ProposedCombination <.. SecretCombination
+Result <.. SecretCombination
+@enduml
+
+PlantUML version 1.2019.06(Fri May 24 19:10:25 CEST 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+12-b304.56
+Operating System: Mac OS X
+OS Version: 10.14.6
+Default Encoding: UTF-8
+Language: es
+Country: ES
+-->
+    </g>
+</svg>

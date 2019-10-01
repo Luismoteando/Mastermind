@@ -5,16 +5,16 @@ import models.Result;
 
 public class ResultView {
 
-	private ProposalController proposalController;
+    private ProposalController proposalController;
 
-	public ResultView(ProposalController proposalController) {
-		this.proposalController = proposalController;
-	}
+    public ResultView(ProposalController proposalController) {
+        this.proposalController = proposalController;
+    }
 
-	public void printResults() {
-		for (Result result : proposalController.getResults()) {
-			System.out.println(result.toString());
-		}
-	}
+    void printResults() {
+        for (Result result : proposalController.getResults()) {
+            System.out.println(result.toString());
+        }
+    }
 
 }

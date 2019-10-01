@@ -6,40 +6,40 @@ import controllers.StartController;
 
 public class GameView {
 
-	private StartView startView;
+    private StartView startView;
 
-	private ProposalView proposalView;
+    private ProposalView proposalView;
 
-	private RetryView retryView;
+    private RetryView retryView;
 
-	public GameView(StartController startController, ProposalController proposalController,
-			RetryController retryController) {
-		this.startView = new StartView(startController);
-		this.proposalView = new ProposalView(proposalController);
-		this.retryView = new RetryView(retryController);
-	}
+    public GameView(StartController startController, ProposalController proposalController,
+                    RetryController retryController) {
+        this.startView = new StartView(startController);
+        this.proposalView = new ProposalView(proposalController);
+        this.retryView = new RetryView(retryController);
+    }
 
-	public void interact() {
-		boolean retry;
-		do {
-			this.start();
-			boolean finished;
-			do {
-				finished = this.propose();
-			} while (!finished);
-			retry = this.retry();
-		} while (retry);
-	}
+    public void interact() {
+        boolean retry;
+        do {
+            this.start();
+            boolean finished;
+            do {
+                finished = this.propose();
+            } while (!finished);
+            retry = this.retry();
+        } while (retry);
+    }
 
-	public void start() {
-		this.startView.interact();
-	}
+    private void start() {
+        this.startView.interact();
+    }
 
-	public boolean propose() {
-		return this.proposalView.interact();
-	}
+    private boolean propose() {
+        return this.proposalView.interact();
+    }
 
-	public boolean retry() {
-		return this.retryView.interact();
-	}
+    private boolean retry() {
+        return this.retryView.interact();
+    }
 }
